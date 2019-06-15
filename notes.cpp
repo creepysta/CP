@@ -1,8 +1,3 @@
-/*
- * https://www.hackerrank.com/contests/cognizant-2/challenges/siddhant-and-money/problem
-*/
-
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -23,8 +18,6 @@ int main() {
 	while(i < notes.size()) {
 		if(sum == k) {
 			count ++;
-			i++;
-			j = i+1;
 		}
 		while(sum<k) {
 			sum += notes[j++];
@@ -33,11 +26,11 @@ int main() {
 			}
 		}
 		i++;
+		j = i + 1;
 		sum = notes[i];
 
 	}
 	cout << count;
-
 
 	return 0;
 }
