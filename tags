@@ -1,0 +1,71 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+V	Dijkstra.cpp	/^int V = 9;$/;"	v
+binarySearch	BinarySearch.cpp	/^int binarySearch(vector<int> arr, int l, int r, int x) $/;"	f
+binarySearch	td.cpp	/^int binarySearch(vector<int> arr, int u, int l, int x){$/;"	f
+climbingLeaderboard	td.cpp	/^vector<int> climbingLeaderboard(vector<int> scores, vector<int> alice) {$/;"	f
+den	balanced_numbers.cpp	/^    const int den = 14348907;$/;"	v
+fillSudoku	sudoku.cpp	/^int fillSudoku(int puzzle[][9], int row, int col)$/;"	f
+isAvailable	sudoku.cpp	/^int isAvailable(int puzzle[][9], int row, int col, int num)$/;"	f
+isPrime	game.cpp	/^int isPrime(int n)$/;"	f
+isPrime	game1.cpp	/^int isPrime(int n)$/;"	f
+main	ArrayManipulation.cpp	/^int main() {$/;"	f
+main	BinarySearch.cpp	/^int main() {$/;"	f
+main	CountingSort.cpp	/^int main()$/;"	f
+main	Dijkstra.cpp	/^int main()$/;"	f
+main	EqualStacks.cpp	/^int main()$/;"	f
+main	Maximum_Subarray_KadaneAlgo.cpp	/^int main()$/;"	f
+main	SimpleTextEditor.cpp	/^int main() {$/;"	f
+main	SockMerchant.cpp	/^int main()$/;"	f
+main	bitwise_sequence.cpp	/^int main()$/;"	f
+main	byte_to_bit.cpp	/^int main()$/;"	f
+main	chef_tennis.cpp	/^int main()$/;"	f
+main	dense_leaderboard.cpp	/^int main()$/;"	f
+main	doctor_universe_cf.cpp	/^int main()$/;"	f
+main	even_fib.cpp	/^int main()$/;"	f
+main	factorial.cpp	/^int main()$/;"	f
+main	game.cpp	/^main()$/;"	f
+main	game1.cpp	/^main()$/;"	f
+main	hashing_cf.cpp	/^int main() {$/;"	f
+main	interval_selection.cpp	/^int main()$/;"	f
+main	kinder.cpp	/^int main()$/;"	f
+main	max_element.cpp	/^main()$/;"	f
+main	missing_numbers.cpp	/^int main()$/;"	f
+main	notes.cpp	/^int main() {$/;"	f
+main	obstacles.cpp	/^int main()$/;"	f
+main	pairs.cpp	/^int main()$/;"	f
+main	pangrams.cpp	/^int main()$/;"	f
+main	points_on_sqr_cf.cpp	/^int main()$/;"	f
+main	rotate_left.cpp	/^int main()$/;"	f
+main	spaceship_bases_gold_cf.cpp	/^int main()$/;"	f
+main	string_to_int.cpp	/^int main()$/;"	f
+main	subarray_sorting.cpp	/^int main()$/;"	f
+main	sudoku.cpp	/^int main()$/;"	f
+main	sum_a&b.cpp	/^main()$/;"	f
+main	td.cpp	/^int main()$/;"	f
+main	test.cpp	/^main()$/;"	f
+main	twelve_to_twenty_four.cpp	/^int main ()$/;"	f
+main	watermelon_cf.cpp	/^int main()$/;"	f
+maxSubarray	Maximum_Subarray_KadaneAlgo.cpp	/^vector<int> maxSubarray(vector<int> arr) {$/;"	f
+min	kinder.cpp	/^int min( int &a, int &b) {$/;"	f
+minDist	Dijkstra.cpp	/^int minDist(int dist[], bool visited[]) {$/;"	f
+missingNumbers	missing_numbers.cpp	/^vector<int> missingNumbers(vector<int> arr, vector<int> brr) {$/;"	f
+pairs	pairs.cpp	/^int pairs(int k, vector<int> arr) {$/;"	f
+pangrams	pangrams.cpp	/^string pangrams(string s) {$/;"	f
+rotLeft	rotate_left.cpp	/^vector<int> rotLeft(vector<int> a, int d) {$/;"	f
+sockMerchant	SockMerchant.cpp	/^int sockMerchant(int n, vector<int> ar) {$/;"	f
+sortvec	spaceship_bases_gold_cf.cpp	/^bool sortvec(vector<long> &v1, vector<long> &v2) {$/;"	f
+split_string	Maximum_Subarray_KadaneAlgo.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+split_string	SockMerchant.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+split_string	missing_numbers.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+split_string	pairs.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+split_string	rotate_left.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+split_string	td.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+swap	game.cpp	/^void swap(int *a,int *b)$/;"	f
+swap	game1.cpp	/^void swap(int *a,int *b)$/;"	f
+swap	interval_selection.cpp	/^void swap(int &a, int &b)$/;"	f
+swap	test.cpp	/^void swap(int *a, int *b) {$/;"	f

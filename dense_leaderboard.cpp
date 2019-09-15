@@ -1,139 +1,81 @@
 
 //https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem
 
-#include <bits/stdc++.h>
 
-using namespace std;
-
-int main()
-{
-    vector<int> scores;
-    vector<int> alice;
-    vector<int> rank_table;
-    vector<int> alice_rank;
-    int s_all,s_alice;
-    int rank=1,c=0,prev;
-    cout<<"Number of scores\n";
-    cin>>s_all;
-    cout<<"all scores input"<<endl;
-    for(int i=0;i<s_all;i++) {
-        int num;
-        cin>>num;
-        scores.push_back(num);
-    }
-    // cout<<"All scores\n";
-    // for(int i=0;i<scores.size();i++) {
-    //     cout<<scores[i]<<endl;
-    // }
-
-    cout<<"Number of alice scores\n";
-    cin>>s_alice;
-    cout<<"all scores input"<<endl;
-    for(int i=0;i<s_alice;i++) {
-        int num;
-        cin>>num;
-        alice.insert(alice.end(),num);
-    }
-    // cout<<"Alice scores\n";
-    // for(int i=0;i<alice.size();i++) {
-    //     cout<<alice[i]<<endl;
-    // }
-
-    cout<<"Rank table before printing\n";
-    // marking the ranks;
-    //int rank=1,prev,c=0;
-    int n = int(scores.size());
-    cout<<n<<endl;
-    for(int i=0;i<n;i++) {
-        prev = scores[c];
-        if(prev!=scores[i]) {
-            rank++;
-            c=i;
-        }
-        rank_table.push_back(rank);
-    }
-    cout<<"Rank table\n";
-    for(int i=0;i<rank_table.size();i++) {
-        cout<<rank_table[i]<<endl;
-    }
-
-    cout<<"counting alice scores\n";
-    c=scores.size()-1;
-
-    if(alice[0]>scores[c]) {
-        alice_rank.push_back(rank_table[c]-1);
-    }
-    else if(alice[0]==scores[c]) {
-        alice_rank.push_back(rank_table[c]);
-    }
-    else if(alice[0]<scores[c]) {
-        alice_rank.push_back(rank_table[c]+1);
-    }
-    for(int i=scores.size()-2, j= 0;i>=0;i--) {
-        prev = scores[c];
-        if(prev!=scores[i]) {
-            if(alice[j]>scores[i]) {
-                if(rank_table[i] == 1)
-                    alice_rank.push_back(1);
-                else
-                    alice_rank.push_back(rank_table[i]-1);
-            }
-            else if(alice[j]==scores[i]) {
-                alice_rank.push_back(rank_table[i]);
-            }
-            else if(alice[j]<scores[i]) {
-                alice_rank.push_back(rank_table[i]+1);
-            }
-            j++;
-            c=i;
-        }
-    }
-
-    cout<<"final alice scores\n";
-    for(int i=0;i<alice_rank.size();i++) {
-        cout<<alice_rank[i]<<endl;
-    }
-}
-
-/*
 #include <bits/stdc++.h>
 
 using namespace std;
 
 vector<string> split_string(string);
 
-// Complete the climbingLeaderboard function below.
+int binarySearch(vector<int> arr, int l, int r, int x) { 
+    if (r >= l) { 
+        int mid = l + (r - l) / 2; 
+        if (arr[mid] == x) 
+            return mid; 
+        if (arr[mid] < x) 
+            return binarySearch(arr, l, mid - 1, x); 
+        return binarySearch(arr, mid + 1, r, x); 
+    } 
+    else
+        return (r+l)/2; 
+}
+    
+
 vector<int> climbingLeaderboard(vector<int> scores, vector<int> alice) {
+
     vector<int> rank_table;
     vector<int> alice_rank;
-    int rank=1,prev,c=0;
-    for(int i=0;i<scores.size();i++) {
-        prev = scores[c];
-        rank_table.push_back(rank);
-        if(prev!=scores[i]) {
-            rank++;
-            c=i;
-        }
-    }
-    c=0;
-    for(int i=0;i<alice.size();i++) {
-        prev = scores[c];
-        if(prev!=scores[i]) {
-            if(alice[i]>scores[i]) {
-                alice_rank.push_back(rank_table[i]-1);
-            }
-            else if(alice[i]==scores[i]) {
-                alice_rank.push_back(rank_table[i]);
-            }
 
-            else if(alice[i]<scores[i]) {
-                alice_rank.push_back(rank_table[i]+1);
-            }
-            c=i;
+    int rank = 1;
+    rank_table.push_back(rank);
+
+    for(int i = 1; i < scores.size(); i++) {
+        if(scores[i] < scores[i-1]) {
+            rank ++;
+            rank_table.push_back(rank);
+        } else {
+            rank_table.push_back(rank);
         }
     }
+
+    int max_score = *max_element(scores.begin(), scores.end());
+
+    for(int i = 0; i < alice.size(); i++) {
+        int pos = binarySearch(scores, 0, scores.size()-1, alice[i]);
+
+        // if(alice[i] > scores[pos]) {
+        //     if(alice_rank[pos] == 1)
+        //         alice_rank.push_back(rank_table[pos]);
+        //     else
+        //         alice_rank.push_back(rank_table[pos]-1);
+        // } 
+
+        if(alice[i] > scores[pos]) {
+            if(alice[i] >= scores[0]) {
+                alice_rank.push_back(1);
+            } else {
+                alice_rank.push_back(rank_table[pos]-1);
+            }
+        }
+
+        else if(alice[i] < scores[pos]) {
+            alice_rank.push_back(rank_table[pos] + 1);
+        }
+        else if(alice[i] == scores[pos]) {
+            alice_rank.push_back(rank_table[pos]);
+        }
+
+    }
+
+    for(int i = 0; i < rank_table.size(); i++) {
+        cout << alice_rank[i] << endl;
+    }
+
+
     return alice_rank;
 }
+
 
 int main()
 {
@@ -192,8 +134,8 @@ int main()
 
 vector<string> split_string(string input_string) {
     string::iterator new_end = unique(input_string.begin(), input_string.end(), [] (const char &x, const char &y) {
-        return x == y and x == ' ';
-    });
+            return x == y and x == ' ';
+            });
 
     input_string.erase(new_end, input_string.end());
 
@@ -218,4 +160,3 @@ vector<string> split_string(string input_string) {
 
     return splits;
 }
-*/
