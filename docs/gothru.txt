@@ -1,0 +1,159 @@
+flutter native channel
+make weather app with widget
+do codechef
+complete sparse slam
+
+
+shit:
+	https://www.youtube.com/watch?v=IUHkhB366tE
+	https://www.youtube.com/watch?v=M2YvRWZCmo0
+	https://www.pitt.edu/~jdnorton/teaching/HPS_0410/chapters/general_relativity_massive/index.html
+
+
+slots:
+	prac, cp-algorithms, geeksforgeeks, algo book 11 - 2/3, 4 - 12
+	discuss / take break 4
+
+
+
+todo:
+	https://codeforces.com/problemset/problem/455/A
+	https://codeforces.com/problemset/problem/1375/B
+	https://codeforces.com/problemset/problem/102/B
+	https://codeforces.com/problemset/problem/271/B
+	https://codeforces.com/problemset/problem/792/C
+	https://codeforces.com/problemset/problem/772/C
+	https://codeforces.com/problemset/problem/883/C
+	https://codeforces.com/contest/1369/problem/D
+	https://codeforces.com/problemset/problem/570/D
+	https://codeforces.com/problemset/problem/1373/D
+	https://codeforces.com/problemset/problem/1374/D
+	https://codeforces.com/problemset/problem/1370/D
+	https://codeforces.com/problemset/problem/1343/D
+	https://codeforces.com/problemset/problem/1374/E1
+	cc ccontain
+	cc triple
+	cc guessing game
+	cc sortvs
+	cc odtpic
+	cc parrty
+	https://www.codechef.com/OCT18B
+	https://www.codechef.com/JULY19B
+
+
+
+developers.facebook.com - spend your free time :)
+
+attmp:
+	lis
+	sortvs
+	contiguous-array
+	find-duplicate
+	binary-array-sum
+	highest value palindrome
+	Prime dates
+	Minimum operations
+	find the seed
+	lovely triplets
+	toll cost digits
+	asteroid collision
+
+
+codeforces:
+	https://codeforces.com/blog/entry/73558
+	h.cpp 1360
+leetcode:
+	contiguous subarray
+	minimum swaps to get smallest string
+	Longest increasing subsequence
+	1202. Smallest String With Swaps
+	237. Delete Node in a Linked List (easy, delete only given current node)
+	2. Add Two Numbers (medium)
+	92. Reverse Linked List II (medium, reverse in one pass)
+	83. Remove Duplicates from Sorted List (easy)
+	82. Remove Duplicates from Sorted List II (medium)
+	Sort List
+	Reorder List
+	Fast-slow pointers:
+	503. Next Greater Element II
+	985. Sum of Even Numbers After Queries (easy)
+	937. Reorder Log Files
+	876. Middle of the Linked List (easy)
+	Two Pointers in Linked List
+	Merge K Sorted Lists
+	Recursive and linked list:
+	369. Plus One Linked List (medium)
+	225. Implement Stack using Queues (easy)
+	232. Implement Queue using Stacks (easy)
+	933. Number of Recent Calls (easy)
+	Queue fits well for buffering problem.
+	933. Number of Recent Calls (easy)
+	622. Design Circular Queue (medium)
+	84. Largest Rectangle in Histogram
+	85. Maximal Rectangle
+	122. Best Time to Buy and Sell Stock II
+	654. Maximum Binary Tree
+	496. Next Greater Element I
+	503. Next Greater Element I
+	121. Best Time to Buy and Sell Stock
+	84. Largest Rectangle in Histogram
+	85. Maximal Rectangle
+	122. Best Time to Buy and Sell Stock II
+	654. Maximum Binary Tree
+	42 Trapping Rain Water
+	739. Daily Temperatures
+	321. Create Maximum Number
+	929. Unique Email Addresses
+	349. Intersection of Two Arrays (easy)
+	350. Intersection of Two Arrays II (easy)
+codechef:
+hackerrank:
+	hack the interview questions
+	new year chaos
+	roads and libraries
+	optimal network cost
+	new integer number
+array2 3 findmissing.cpp
+check:
+	sum of triplets = given sum
+
+
+
+
+
+
+cracking the coding interview
+notes:
+	bitsets:
+		to get the last set bit of x: 		x & (~x + 1)
+		to clear the last set bit of x :	x & (x-1)
+
+
+
+
+
+views
+odd even sum diff
+no of leaf
+nodes at a level
+sum of levels
+reverse level order traversal
+number of subtrees of sum x
+diagonal sum
+clone a binary tree with random pointers
+sorted array to binary tree
+print all nodes that don't have a sibling
+
+
+
+
+
+
+
+
+
+
+
+
+undecidable problems and halting problems
+busy beaver, ackerman numbers

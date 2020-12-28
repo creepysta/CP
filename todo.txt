@@ -1,0 +1,35 @@
+hacker rank:
+	larrys array
+	posion plant
+	hack the interview 4 3,4
+at coder:
+	atcoder.jp/contests/abc176/tasks/abc176_d
+codeforces:
+	codeforces.com/problemset/problem/1409/E
+	codeforces.com/problemset/problem/1409/F
+	codeforces.com/problemset/problem/455/A
+	codeforces.com/problemset/problem/1375/B
+	codeforces.com/problemset/problem/102/B
+	codeforces.com/problemset/problem/271/B
+	codeforces.com/problemset/problem/792/C
+	codeforces.com/problemset/problem/772/C
+	codeforces.com/problemset/problem/883/C
+	codeforces.com/contest/1369/problem/D
+	codeforces.com/problemset/problem/570/D
+	codeforces.com/problemset/problem/1373/D
+	codeforces.com/problemset/problem/1374/D
+	codeforces.com/problemset/problem/1370/D
+	codeforces.com/problemset/problem/1343/D
+	codeforces.com/problemset/problem/1374/E1
+codechef:
+	chefwed
+	subsfreq
+	DRGNDEN
+	contain
+	triple
+	guessing game
+	sortvs
+	odtpic
+	parrty
+	https://www.codechef.com/OCT18B
+	https://www.codechef.com/JULY19B

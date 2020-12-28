@@ -1,0 +1,250 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	test.cpp	/^class A {$/;"	c	file:
+A	typecasting_function.cpp	/^		A(int i,char c,double d) : i(i), c(c), d(d) {}$/;"	f	class:A
+A	typecasting_function.cpp	/^class A {$/;"	c	file:
+A	virtual_base.cpp	/^	A(int i=0):i(i){}$/;"	f	class:A
+A	virtual_base.cpp	/^class A {$/;"	c	file:
+ABC	seven_1.cpp	/^class ABC {$/;"	c	file:
+B	virtual_base.cpp	/^	B(int a=0, int b=0) :A(a), j(b) {$/;"	f	class:B
+B	virtual_base.cpp	/^class B : public A {$/;"	c	file:
+CharOperation	eight_3.cpp	/^	CharOperation (char c='a') : c(c) {}$/;"	f	class:CharOperation
+CharOperation	eight_3.cpp	/^class CharOperation {$/;"	c	file:
+Circle	seven_4.cpp	/^	Circle(string s, int r) : Shape(s), radius(r){}$/;"	f	class:Circle
+Circle	seven_4.cpp	/^class Circle : public Shape {$/;"	c	file:
+EFG	seven_1.cpp	/^class EFG : public ABC {$/;"	c	file:
+Frnz	concepts1.cpp	/^class Frnz {$/;"	c	file:
+Individuals	micro_project_application.cpp	/^	Individuals( double te=0) : total_expenditure(te) {};$/;"	f	class:Individuals
+Individuals	micro_project_application.cpp	/^class Individuals {$/;"	c	file:
+Node	linked_list.cpp	/^    Node(int d=0):data(d),next(NULL){};$/;"	f	class:Node
+Node	linked_list.cpp	/^class Node {$/;"	c	file:
+Node	nine_4.cpp	/^    Node(T d=0):data(d),next(NULL){};$/;"	f	class:Node
+Node	nine_4.cpp	/^template<class T> class Node {$/;"	c	file:
+Rectangle	seven_4.cpp	/^	Rectangle(string s, double l, double b) : Shape(s), length(l), breadth(b) {}$/;"	f	class:Rectangle
+Rectangle	seven_4.cpp	/^class Rectangle : public Shape {$/;"	c	file:
+RegularPolygon	seven_4.cpp	/^	RegularPolygon(string s, double sides, int n): Shape(s), sides(sides), n(n) {}$/;"	f	class:RegularPolygon
+RegularPolygon	seven_4.cpp	/^class RegularPolygon : public Shape {$/;"	c	file:
+Shape	seven_4.cpp	/^	Shape (string s="") : s(s){$/;"	f	class:Shape
+Shape	seven_4.cpp	/^class Shape {$/;"	c	file:
+SomeGuy	concepts1.cpp	/^class SomeGuy {$/;"	c	file:
+Student	student_data.cpp	/^class Student {$/;"	c	file:
+Time	Time.cpp	/^	Time(){h=0;m=0;s=0;}$/;"	f	class:Time
+Time	Time.cpp	/^	Time(int hh,int mm,int ss){h=hh;m=mm;s=ss;}$/;"	f	class:Time
+Time	Time.cpp	/^class Time$/;"	c	file:
+abc	eight_1.cpp	/^	abc(int i=0):i(i) {}$/;"	f	class:abc
+abc	eight_1.cpp	/^class abc {$/;"	c	file:
+abc	eight_2.cpp	/^	abc(int i=0):i(i) {}$/;"	f	class:abc
+abc	eight_2.cpp	/^class abc {$/;"	c	file:
+abc	nine_3.cpp	/^	abc() {$/;"	f	class:abc
+abc	nine_3.cpp	/^template<class T,int s> class abc {$/;"	c	file:
+abc	six_5.cpp	/^class abc$/;"	c	file:
+abc	ten_3.cpp	/^	abc (int s=0):size(s) {$/;"	f	class:abc
+abc	ten_3.cpp	/^class abc {$/;"	c	file:
+abc	ten_4.cpp	/^	abc (int i, double d, char c):i(i),d(d),c(c) {};$/;"	f	class:abc
+abc	ten_4.cpp	/^class abc {$/;"	c	file:
+acceptNumber	ten_2.cpp	/^void acceptNumber() {$/;"	f
+add	Time.cpp	/^	static void add(Time &a,Time &b)$/;"	f	class:Time
+all_numbers_1234	all_numbers_1234(with_rep).cpp	/^void all_numbers_1234()$/;"	f
+area	seven_4.cpp	/^	void area() {$/;"	f	class:Circle
+area	seven_4.cpp	/^	void area() {$/;"	f	class:Rectangle
+area	seven_4.cpp	/^	void area() {$/;"	f	class:RegularPolygon
+arr	ten_3.cpp	/^	int size, * arr, s;$/;"	m	class:abc	file:
+breadth	seven_4.cpp	/^	double length, breadth;$/;"	m	class:Rectangle	file:
+c	eight_3.cpp	/^	char c;$/;"	m	class:CharOperation	file:
+c	ten_4.cpp	/^	char c;$/;"	m	class:abc	file:
+c	typecasting_function.cpp	/^	char c;$/;"	m	class:A	file:
+d	ten_4.cpp	/^	double d;$/;"	m	class:abc	file:
+d	typecasting_function.cpp	/^	double d;$/;"	m	class:A	file:
+data	linked_list.cpp	/^    int data;$/;"	m	class:Node	file:
+data	nine_4.cpp	/^    T data;$/;"	m	class:Node	file:
+den	Problems/balanced_numbers.cpp	/^    const int den = 14348907;$/;"	v
+details	micro_project_application.cpp	/^	map <string, string> details;$/;"	m	class:Individuals	file:
+details_all_items	micro_project_application.cpp	/^	void details_all_items () {$/;"	f	class:Individuals
+details_one_item	micro_project_application.cpp	/^	void details_one_item () {$/;"	f	class:Individuals
+di	micro_project_application.cpp	/^	map <string, string>::iterator di;$/;"	m	class:Individuals	file:
+display	Time.cpp	/^	void display()$/;"	f	class:Time
+display	arr_reference.cpp	/^void display(int (&a)[5])$/;"	f
+e	six_5.cpp	/^    efg e;$/;"	m	class:pqr	file:
+efg	eight_1.cpp	/^	efg(int i=0):i(i){}$/;"	f	class:efg
+efg	eight_1.cpp	/^class efg {$/;"	c	file:
+efg	six_5.cpp	/^class efg : virtual public abc $/;"	c	file:
+expenditure_per_item	micro_project_application.cpp	/^	void expenditure_per_item() {$/;"	f	class:Individuals
+fibonacci	fibonacci.cpp	/^int fibonacci(int n)$/;"	f
+fibonacci1	fibonacci.cpp	/^void fibonacci1(int n)$/;"	f
+fillSudoku	Problems/sudoku.cpp	/^int fillSudoku(int puzzle[][9], int row, int col)$/;"	f
+fn	concepts2.cpp	/^int &fn()$/;"	f
+fn	nine_1.cpp	/^void fn(T t) {$/;"	f
+fn	nine_1.cpp	/^void fn(T1 t1, T2 t2) {$/;"	f
+fn	something.cpp	/^void fn(int &k)$/;"	f
+fn	something.cpp	/^void fn(int i)$/;"	f
+get	concepts1.cpp	/^		void get() {$/;"	f	class:SomeGuy	file:
+get	concepts1.cpp	/^	public: void get() {$/;"	f	class:Frnz
+get	nine_3.cpp	/^	void get() {$/;"	f	class:abc
+get	seven_1.cpp	/^	virtual void get() {} \/\/ = 0;$/;"	f	class:ABC
+get	seven_1.cpp	/^	void get() {$/;"	f	class:EFG
+get	six_5.cpp	/^    virtual void get(){cin>>i;}$/;"	f	class:abc
+get	six_5.cpp	/^    void get(){$/;"	f	class:pqr
+get	six_5.cpp	/^    void get(){abc::get();cin>>i;efg::get();}$/;"	f	class:mno
+get	six_5.cpp	/^    void get(){abc::get();cin>>i;}$/;"	f	class:efg
+get	ten_3.cpp	/^	void get() {$/;"	f	class:abc
+greatest	largest(without_if).cpp	/^void greatest(double a, double b)$/;"	f
+h	Time.cpp	/^	int h,m,s;$/;"	m	class:Time	file:
+i	concepts1.cpp	/^	int i;$/;"	m	class:SomeGuy	file:
+i	eight_1.cpp	/^	int i;$/;"	m	class:abc	file:
+i	eight_1.cpp	/^	int i;$/;"	m	class:efg	file:
+i	eight_1.cpp	/^	int i;$/;"	m	class:mno	file:
+i	eight_2.cpp	/^	int i;$/;"	m	class:abc	file:
+i	seven_1.cpp	/^	int i;$/;"	m	class:EFG	file:
+i	six_5.cpp	/^    int i;$/;"	m	class:efg	file:
+i	six_5.cpp	/^    int i;$/;"	m	class:mno	file:
+i	six_5.cpp	/^    int i;$/;"	m	class:pqr	file:
+i	six_5.cpp	/^    static int i;$/;"	m	class:abc	file:
+i	six_5.cpp	/^int abc :: i = 0;$/;"	m	class:abc	file:
+i	ten_4.cpp	/^	int i;$/;"	m	class:abc	file:
+i	typecasting_function.cpp	/^	int i;$/;"	m	class:A	file:
+i	virtual_base.cpp	/^	int i;$/;"	m	class:A	file:
+isAvailable	Problems/sudoku.cpp	/^int isAvailable(int puzzle[][9], int row, int col, int num)$/;"	f
+isPrime	Problems/game.cpp	/^int isPrime(int n)$/;"	f
+isPrime	Problems/game1.cpp	/^int isPrime(int n)$/;"	f
+it	ten_2.cpp	/^map<int, string>::iterator it;$/;"	v
+item_details	micro_project_application.cpp	/^	void item_details() {$/;"	f	class:Individuals
+item_prices	micro_project_application.cpp	/^	map <string, double> item_prices;$/;"	m	class:Individuals	file:
+j	concepts1.cpp	/^	public: int j = SomeGuy::i;$/;"	m	class:Frnz	file:
+j	virtual_base.cpp	/^	int j;$/;"	m	class:B	file:
+length	seven_4.cpp	/^	double length, breadth;$/;"	m	class:Rectangle	file:
+m	Time.cpp	/^	int h,m,s;$/;"	m	class:Time	file:
+m	six_5.cpp	/^    mno m;$/;"	m	class:pqr	file:
+main	Problems/ArrayManipulation.cpp	/^int main() {$/;"	f
+main	Problems/CountingSort.cpp	/^int main()$/;"	f
+main	Problems/EqualStacks.cpp	/^int main()$/;"	f
+main	Problems/Maximum_Subarray_KadaneAlgo.cpp	/^int main()$/;"	f
+main	Problems/SimpleTextEditor.cpp	/^int main() {$/;"	f
+main	Problems/SockMerchant.cpp	/^int main()$/;"	f
+main	Problems/bitwise_sequence.cpp	/^int main()$/;"	f
+main	Problems/byte_to_bit.cpp	/^int main()$/;"	f
+main	Problems/chef_tennis.cpp	/^int main()$/;"	f
+main	Problems/dense_leaderboard.cpp	/^int main()$/;"	f
+main	Problems/even_fib.cpp	/^int main()$/;"	f
+main	Problems/factorial.cpp	/^int main()$/;"	f
+main	Problems/game.cpp	/^main()$/;"	f
+main	Problems/game1.cpp	/^main()$/;"	f
+main	Problems/interval_selection.cpp	/^int main()$/;"	f
+main	Problems/missing_numbers.cpp	/^int main()$/;"	f
+main	Problems/notes.cpp	/^int main() {$/;"	f
+main	Problems/obstacles.cpp	/^int main()$/;"	f
+main	Problems/pairs.cpp	/^int main()$/;"	f
+main	Problems/pangrams.cpp	/^int main()$/;"	f
+main	Problems/rotate_left.cpp	/^int main()$/;"	f
+main	Problems/string_to_int.cpp	/^int main()$/;"	f
+main	Problems/sudoku.cpp	/^int main()$/;"	f
+main	Problems/sum_a&b.cpp	/^main()$/;"	f
+main	Problems/test.cpp	/^main()$/;"	f
+main	Problems/twelve_to_twenty_four.cpp	/^int main ()$/;"	f
+main	Time.cpp	/^int main()$/;"	f
+main	all_numbers_1234(with_rep).cpp	/^main()$/;"	f
+main	all_numbers_1234(without_rep).cpp	/^main()$/;"	f
+main	arr_reference.cpp	/^int main()$/;"	f
+main	concepts2.cpp	/^main()$/;"	f
+main	eight_1.cpp	/^main()$/;"	f
+main	eight_2.cpp	/^int main()$/;"	f
+main	eight_3.cpp	/^int main()$/;"	f
+main	eleven_1.cpp	/^main()$/;"	f
+main	exam.cpp	/^int main()$/;"	f
+main	fibonacci.cpp	/^main()$/;"	f
+main	ip_class.cpp	/^int main()$/;"	f
+main	largest(without_if).cpp	/^main()$/;"	f
+main	linked_list.cpp	/^main()$/;"	f
+main	micro_project_application.cpp	/^int main()$/;"	f
+main	nine_1.cpp	/^main() {$/;"	f
+main	nine_2.cpp	/^main() {$/;"	f
+main	nine_3.cpp	/^main()$/;"	f
+main	nine_4.cpp	/^main()$/;"	f
+main	palindrome.cpp	/^main()$/;"	f
+main	seven_1.cpp	/^main()$/;"	f
+main	seven_4.cpp	/^int main()$/;"	f
+main	six_5.cpp	/^main()$/;"	f
+main	something.cpp	/^main()$/;"	f
+main	string_palindrome.cpp	/^int main()$/;"	f
+main	ten_2.cpp	/^int main()$/;"	f
+main	ten_3.cpp	/^main() {$/;"	f
+main	ten_4.cpp	/^main()$/;"	f
+main	test.cpp	/^int main()$/;"	f
+main	typecasting_function.cpp	/^int main()$/;"	f
+main	virtual_base.cpp	/^int main()$/;"	f
+maxSubarray	Problems/Maximum_Subarray_KadaneAlgo.cpp	/^vector<int> maxSubarray(vector<int> arr) {$/;"	f
+message	test.cpp	/^	char *message = "From A!\\n";$/;"	m	class:A	file:
+mi	micro_project_application.cpp	/^	map <string, double>::iterator mi;$/;"	m	class:Individuals	file:
+min	largest(without_if).cpp	/^void min(double a, double b)$/;"	f
+missingNumbers	Problems/missing_numbers.cpp	/^vector<int> missingNumbers(vector<int> arr, vector<int> brr) {$/;"	f
+mno	eight_1.cpp	/^	mno(int i=0):i(i) {}$/;"	f	class:mno
+mno	eight_1.cpp	/^class mno {$/;"	c	file:
+mno	six_5.cpp	/^class mno : virtual public abc $/;"	c	file:
+n	seven_4.cpp	/^	int n;$/;"	m	class:RegularPolygon	file:
+next	linked_list.cpp	/^    Node *next;$/;"	m	class:Node	file:
+next	nine_4.cpp	/^    Node *next;$/;"	m	class:Node	file:
+operator *	eight_1.cpp	/^mno operator * (abc & a, efg & e) {$/;"	f
+operator ++	eight_2.cpp	/^	int operator ++ () {$/;"	f	class:abc
+operator ++	eight_2.cpp	/^	int operator ++ (int) {$/;"	f	class:abc
+operator ++	eight_3.cpp	/^	char operator ++ () {$/;"	f	class:CharOperation
+operator --	eight_3.cpp	/^	char operator -- () {$/;"	f	class:CharOperation
+operator <<	eight_2.cpp	/^void operator << (ostream & x, abc & a) {$/;"	f
+operator []	ten_3.cpp	/^	void operator [] (int sz) {$/;"	f	class:abc
+operator char	ten_4.cpp	/^	operator char () {$/;"	f	class:abc
+operator char	typecasting_function.cpp	/^		operator char() {$/;"	f	class:A
+operator double	ten_4.cpp	/^	operator double () {$/;"	f	class:abc
+operator double	typecasting_function.cpp	/^		operator double() {$/;"	f	class:A
+operator int	ten_4.cpp	/^	operator int () {$/;"	f	class:abc
+operator int	typecasting_function.cpp	/^		operator int() {$/;"	f	class:A
+pairs	Problems/pairs.cpp	/^int pairs(int k, vector<int> arr) {$/;"	f
+pangrams	Problems/pangrams.cpp	/^string pangrams(string s) {$/;"	f
+perimeter	seven_4.cpp	/^	void perimeter() {$/;"	f	class:Circle
+perimeter	seven_4.cpp	/^	void perimeter() {$/;"	f	class:Rectangle
+perimeter	seven_4.cpp	/^	void perimeter() {$/;"	f	class:RegularPolygon
+permute	all_numbers_1234(without_rep).cpp	/^void permute(int *arr,int a,int l)$/;"	f
+pi	seven_4.cpp	/^	const double pi = 3.14159265358979323846;$/;"	m	class:Circle	file:
+pi	seven_4.cpp	/^	const double pi = 3.14159265358979323846;$/;"	m	class:RegularPolygon	file:
+pqr	six_5.cpp	/^class pqr : public efg,public mno$/;"	c	file:
+printArr	all_numbers_1234(without_rep).cpp	/^void printArr(int *arr,int l)$/;"	f
+radius	seven_4.cpp	/^	int radius;$/;"	m	class:Circle	file:
+rotLeft	Problems/rotate_left.cpp	/^vector<int> rotLeft(vector<int> a, int d) {$/;"	f
+s	Time.cpp	/^	int h,m,s;$/;"	m	class:Time	file:
+s	seven_4.cpp	/^	string s;$/;"	m	class:Shape	file:
+s	ten_3.cpp	/^	int size, * arr, s;$/;"	m	class:abc	file:
+show	concepts1.cpp	/^		void show() {$/;"	f	class:SomeGuy	file:
+show	concepts1.cpp	/^	public: void show() {$/;"	f	class:Frnz
+show	eight_1.cpp	/^	void show() {$/;"	f	class:mno
+show	linked_list.cpp	/^void show(Node *head) {$/;"	f
+show	nine_3.cpp	/^	void show() {$/;"	f	class:abc
+show	nine_4.cpp	/^template<class T> void show(Node<T> *head) {$/;"	f
+show	seven_1.cpp	/^	virtual void show() {} \/\/ = 0;$/;"	f	class:ABC
+show	seven_1.cpp	/^	void show() {$/;"	f	class:EFG
+show	six_5.cpp	/^    virtual void show(){cout<<" ABC "<<i;}$/;"	f	class:abc
+show	six_5.cpp	/^    void show(){$/;"	f	class:pqr
+show	six_5.cpp	/^    void show(){abc::show();cout<<" EFG "<<i;}$/;"	f	class:efg
+show	six_5.cpp	/^    void show(){abc::show();cout<<" MNO "<<i;}$/;"	f	class:mno
+show	ten_3.cpp	/^	void show() {$/;"	f	class:abc
+show	test.cpp	/^void show(A &a) {$/;"	f
+show	virtual_base.cpp	/^	void show() {$/;"	f	class:B
+sides	seven_4.cpp	/^	double sides;$/;"	m	class:RegularPolygon	file:
+size	ten_3.cpp	/^	int size, * arr, s;$/;"	m	class:abc	file:
+sockMerchant	Problems/SockMerchant.cpp	/^int sockMerchant(int n, vector<int> ar) {$/;"	f
+sort	nine_2.cpp	/^template<class A> void sort(A a[], int s) {$/;"	f
+sort	nine_3.cpp	/^	void sort() {$/;"	f	class:abc
+split_string	Problems/Maximum_Subarray_KadaneAlgo.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+split_string	Problems/SockMerchant.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+split_string	Problems/missing_numbers.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+split_string	Problems/pairs.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+split_string	Problems/rotate_left.cpp	/^vector<string> split_string(string input_string) {$/;"	f
+swap	Problems/game.cpp	/^void swap(int *a,int *b)$/;"	f
+swap	Problems/game1.cpp	/^void swap(int *a,int *b)$/;"	f
+swap	Problems/interval_selection.cpp	/^void swap(int &a, int &b)$/;"	f
+swap	Problems/test.cpp	/^void swap(int *a, int *b) {$/;"	f
+swap	all_numbers_1234(without_rep).cpp	/^void swap(int *a,int *b)$/;"	f
+swap	nine_2.cpp	/^template<class T> void swap(T *a1, T *a2) {$/;"	f
+t	nine_3.cpp	/^	T *t;$/;"	m	class:abc	file:
+total_expenditure	micro_project_application.cpp	/^	double \/*rate, price_per_item,*\/ total_expenditure;$/;"	m	class:Individuals	file:
+total_expenditure_over_a_period	micro_project_application.cpp	/^	void total_expenditure_over_a_period() {$/;"	f	class:Individuals

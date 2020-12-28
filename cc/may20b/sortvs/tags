@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+MOD	.\dfs.cpp	/^const int MOD = 1e9 + 7;$/;"	v
+a	.\sol.cpp	/^vector<int> a;$/;"	v
+canbe	.\sol.cpp	/^vector<bool> canbe;$/;"	v
+dfs	.\dfs.cpp	/^void dfs(const vector<vector<int>> &g, int parent) {$/;"	f
+dfs	.\sol.cpp	/^void dfs(int index, int me) {$/;"	f
+g	.\sol.cpp	/^vector<vector<int>> g;$/;"	v
+main	.\dfs.cpp	/^int main() {$/;"	f
+main	.\sol.cpp	/^int main() {$/;"	f
+maxc	.\sol.cpp	/^int maxc = 0;$/;"	v
+solve	.\sol.cpp	/^void solve() {$/;"	f
+vis	.\dfs.cpp	/^vector<bool> vis;$/;"	v
+vis	.\sol.cpp	/^vector<bool> vis;$/;"	v

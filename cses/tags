@@ -1,0 +1,425 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+MAX	D:\Codes\C++\Problems\cses\1640.cpp	/^const int MAX = 1e9+1;$/;"	v
+MAX	D:\Codes\C++\Problems\cses\1647.cpp	/^const ll MAX = 1e9 + 1;$/;"	v
+MAX	D:\Codes\C++\Problems\cses\1649.cpp	/^const ll MAX = 1e9 + 1;$/;"	v
+MID	D:\Codes\C++\Problems\cses\1648_1.cpp	13;"	d	file:
+MOD	D:\Codes\C++\Problems\cses\1095.cpp	/^const ll MOD = 1e9+7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1633.cpp	/^const ll MOD = 1e9 + 7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1646.cpp	/^const int MOD = 1e9 + 7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1647.cpp	/^const ll MOD = 1e9 + 7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1648.cpp	/^const ll MOD = 1e9 + 7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1648_1.cpp	/^const ll MOD = 1e9 + 7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^const ll MOD = 1e9 + 7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1649.cpp	/^const ll MOD = 1e9 + 7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1650.cpp	/^const int MOD = 1e9 + 7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1651.cpp	/^const ll MOD = 1e9 + 7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\1712.cpp	/^const ll MOD = 1e9+7;$/;"	v
+MOD	D:\Codes\C++\Problems\cses\lisa.cpp	/^const int MOD = 1e9 + 7;$/;"	v
+a	D:\Codes\C++\Problems\cses\1646.cpp	/^	vector<ll> a;$/;"	m	struct:segtree	file:
+a	D:\Codes\C++\Problems\cses\1647.cpp	/^	vector<ll> a;$/;"	m	struct:segtree	file:
+a	D:\Codes\C++\Problems\cses\1648.cpp	/^	vector<ll> a;$/;"	m	struct:segtree	file:
+a	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	vector<ll> a;$/;"	m	struct:segtree	file:
+a	D:\Codes\C++\Problems\cses\1649.cpp	/^	vector<ll> a;$/;"	m	struct:segtree	file:
+a	D:\Codes\C++\Problems\cses\1650.cpp	/^	vector<ll> a;$/;"	m	struct:segtree	file:
+a	D:\Codes\C++\Problems\cses\1651.cpp	/^	vector<ll> a;$/;"	m	struct:segtree	file:
+add	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^	void add(ll idx, ll delta) {$/;"	f	struct:fenwick
+bit	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^	vector<ull> bit;$/;"	m	struct:fenwick	file:
+build	D:\Codes\C++\Problems\cses\1646.cpp	/^	void build(const vector<ll> &v) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1646.cpp	/^	void build(const vector<ll> &v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1647.cpp	/^	void build(const vector<ll> &v) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1647.cpp	/^	void build(const vector<ll> &v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1648.cpp	/^	void build(const vector<ll> &v) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1648.cpp	/^	void build(const vector<ll> &v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	void build(const vector<ll> &v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1649.cpp	/^	void build(const vector<ll> &v) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1649.cpp	/^	void build(const vector<ll> &v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1650.cpp	/^	void build(const vector<ll> &v) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1650.cpp	/^	void build(const vector<ll> &v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1651.cpp	/^	void build(const vector<ll> &v) {$/;"	f	struct:segtree
+build	D:\Codes\C++\Problems\cses\1651.cpp	/^	void build(const vector<ll> &v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+endl	D:\Codes\C++\Problems\cses\1074.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1079.cpp	8;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1081.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1082.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1084.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1090.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1091.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1095.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1141.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1163.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1619.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1621.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1622.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1623.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1630.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1631.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1633.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1640.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1641.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1643.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1646.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1647.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1648.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1648_1.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1648_fen.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1649.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1650.cpp	11;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1651.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1712.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1713.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1715.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1716.cpp	8;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1722.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1754.cpp	12;"	d	file:
+endl	D:\Codes\C++\Problems\cses\1755.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cses\lisa.cpp	12;"	d	file:
+fact	D:\Codes\C++\Problems\cses\1079.cpp	/^ll fact(ll n) {$/;"	f
+fact	D:\Codes\C++\Problems\cses\1622.cpp	/^ull fact(int n) {$/;"	f
+fact	D:\Codes\C++\Problems\cses\1715.cpp	/^ll fact(ll n) {$/;"	f
+fact	D:\Codes\C++\Problems\cses\1716.cpp	/^ll fact(ll n) {$/;"	f
+fact	D:\Codes\C++\Problems\cses\lisa.cpp	/^ll fact(ll n) {$/;"	f
+factorials	D:\Codes\C++\Problems\cses\1079.cpp	/^ll factorials[nax];$/;"	v
+factorials	D:\Codes\C++\Problems\cses\1716.cpp	/^ll factorials[nax];$/;"	v
+fenwick	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^	fenwick(ll _n) {$/;"	f	struct:fenwick
+fenwick	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^	fenwick(vector<ll> a) : fenwick((ll) a.size()) {$/;"	f	struct:fenwick
+fenwick	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^struct fenwick {$/;"	s	file:
+ff	D:\Codes\C++\Problems\cses\1074.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1079.cpp	6;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1084.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1090.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1091.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1141.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1163.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1619.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1622.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1623.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1630.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1631.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1633.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1640.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1641.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1643.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1646.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1647.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1648.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1648_1.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1648_fen.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1649.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1650.cpp	9;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1651.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1715.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1716.cpp	6;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1722.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\1754.cpp	10;"	d	file:
+ff	D:\Codes\C++\Problems\cses\lisa.cpp	10;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1074.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1079.cpp	4;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1081.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1082.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1084.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1090.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1091.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1095.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1141.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1163.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1619.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1621.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1622.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1623.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1630.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1631.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1633.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1640.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1641.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1643.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1646.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1647.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1648.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1648_1.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1648_fen.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1649.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1650.cpp	7;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1651.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1712.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1713.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1715.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1716.cpp	4;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1722.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1754.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\1755.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cses\lisa.cpp	8;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1074.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1079.cpp	3;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1081.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1082.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1084.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1090.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1091.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1092.cpp	4;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1095.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1141.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1163.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1165.cpp	3;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1619.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1621.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1622.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1623.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1630.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1631.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1633.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1640.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1641.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1643.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1646.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1647.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1648.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1648_1.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1648_fen.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1649.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1650.cpp	6;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1651.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1712.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1713.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1715.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1716.cpp	3;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1722.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\1754.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cses\lisa.cpp	7;"	d	file:
+main	D:\Codes\C++\Problems\cses\1068.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1069.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1070.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1071.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1074.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1079.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1081.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1082.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1083.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1084.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1090.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1091.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1092.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1094.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1095.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1141.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1163.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1165.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1617.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1618.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1619.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1621.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1622.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1623.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1630.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1631.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1633.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1640.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1641.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1643.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1646.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1647.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1648.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1648_1.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1649.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1650.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1651.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1712.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1713.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1715.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1716.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1722.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1754.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\1755.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cses\lisa.cpp	/^int32_t main() {$/;"	f
+mod	D:\Codes\C++\Problems\cses\1074.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1079.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1082.cpp	/^const int mod = 1e9+7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1141.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1617.cpp	/^const int mod = 1e9+7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1622.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1623.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1631.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1715.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1716.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1722.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cses\1754.cpp	/^const int mod = 1e9 + 7;$/;"	v
+multiply	D:\Codes\C++\Problems\cses\1722.cpp	/^vector<vector<ll>> multiply(vector<vector<ll>> dp, vector<vector<ll>> mul) {$/;"	f
+n	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^	ll n;$/;"	m	struct:fenwick	file:
+nax	D:\Codes\C++\Problems\cses\1079.cpp	/^const int nax = 1e6 + 1;$/;"	v
+nax	D:\Codes\C++\Problems\cses\1716.cpp	/^const int nax = 1e6 + 1;$/;"	v
+power	D:\Codes\C++\Problems\cses\1079.cpp	/^ll power(ll a, ll b) {$/;"	f
+power	D:\Codes\C++\Problems\cses\1617.cpp	/^ull power(ull a, ull b) {$/;"	f
+power	D:\Codes\C++\Problems\cses\1715.cpp	/^ll power(ll a, ll b) {$/;"	f
+power	D:\Codes\C++\Problems\cses\1716.cpp	/^ll power(ll a, ll b) {$/;"	f
+power	D:\Codes\C++\Problems\cses\1722.cpp	/^ll power(ll n) {$/;"	f
+power	D:\Codes\C++\Problems\cses\lisa.cpp	/^ll power(ll a, ll b, ll mod) {$/;"	f
+pull	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	void pull(ll x) {$/;"	f	struct:segtree
+pwr	D:\Codes\C++\Problems\cses\1095.cpp	/^ll pwr(ll a, ll b) {$/;"	f
+pwr	D:\Codes\C++\Problems\cses\1712.cpp	/^ll pwr(ll a, ll b, ll mod) {$/;"	f
+query	D:\Codes\C++\Problems\cses\1646.cpp	/^	ll query(ll l, ll r) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1646.cpp	/^	ll query(ll l, ll r, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1647.cpp	/^	ll query(ll l, ll r) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1647.cpp	/^	ll query(ll l, ll r, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1648.cpp	/^	ll query(ll l, ll r) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1648.cpp	/^	ll query(ll l, ll r, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	ll query(ll l, ll r) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	ll query(ll l, ll r, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1649.cpp	/^	ll query(ll l, ll r) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1649.cpp	/^	ll query(ll l, ll r, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1650.cpp	/^	ll query(ll l, ll r) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1650.cpp	/^	ll query(ll l, ll r, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1651.cpp	/^	ll query(ll l, ll r) {$/;"	f	struct:segtree
+query	D:\Codes\C++\Problems\cses\1651.cpp	/^	ll query(ll l, ll r, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1646.cpp	/^	segtree() {};$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1646.cpp	/^	segtree(ll n) {$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1646.cpp	/^struct segtree {$/;"	s	file:
+segtree	D:\Codes\C++\Problems\cses\1647.cpp	/^	segtree() {};$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1647.cpp	/^	segtree(ll n) {$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1647.cpp	/^struct segtree {$/;"	s	file:
+segtree	D:\Codes\C++\Problems\cses\1648.cpp	/^	segtree() {};$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1648.cpp	/^	segtree(ll n) {$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1648.cpp	/^struct segtree {$/;"	s	file:
+segtree	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	segtree() {};$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	segtree(const vector<ll> &v) {$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1648_1.cpp	/^struct segtree {$/;"	s	file:
+segtree	D:\Codes\C++\Problems\cses\1649.cpp	/^	segtree() {};$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1649.cpp	/^	segtree(ll n) {$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1649.cpp	/^struct segtree {$/;"	s	file:
+segtree	D:\Codes\C++\Problems\cses\1650.cpp	/^	segtree() {};$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1650.cpp	/^	segtree(ll n) {$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1650.cpp	/^struct segtree {$/;"	s	file:
+segtree	D:\Codes\C++\Problems\cses\1651.cpp	/^	segtree() {};$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1651.cpp	/^	segtree(ll n) {$/;"	f	struct:segtree
+segtree	D:\Codes\C++\Problems\cses\1651.cpp	/^struct segtree {$/;"	s	file:
+size	D:\Codes\C++\Problems\cses\1646.cpp	/^	ll size;$/;"	m	struct:segtree	file:
+size	D:\Codes\C++\Problems\cses\1647.cpp	/^	ll size;$/;"	m	struct:segtree	file:
+size	D:\Codes\C++\Problems\cses\1648.cpp	/^	ll size;$/;"	m	struct:segtree	file:
+size	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	ll size;$/;"	m	struct:segtree	file:
+size	D:\Codes\C++\Problems\cses\1649.cpp	/^	ll size;$/;"	m	struct:segtree	file:
+size	D:\Codes\C++\Problems\cses\1650.cpp	/^	ll size;$/;"	m	struct:segtree	file:
+size	D:\Codes\C++\Problems\cses\1651.cpp	/^	ll size;$/;"	m	struct:segtree	file:
+solve	D:\Codes\C++\Problems\cses\1071.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1074.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1079.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1081.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1082.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1084.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1090.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1091.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1092.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1095.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1141.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1163.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1619.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1621.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1622.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1623.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1630.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1631.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1633.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1640.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1641.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1643.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1646.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1647.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1648.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1648_1.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1649.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1650.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1651.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1712.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1713.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1715.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1716.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1722.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1754.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\1755.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cses\lisa.cpp	/^void solve() {$/;"	f
+ss	D:\Codes\C++\Problems\cses\1074.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1079.cpp	7;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1084.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1090.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1091.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1141.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1163.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1619.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1622.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1623.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1630.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1631.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1633.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1640.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1641.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1643.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1646.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1647.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1648.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1648_1.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1648_fen.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1649.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1650.cpp	10;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1651.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1715.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1716.cpp	7;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1722.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\1754.cpp	11;"	d	file:
+ss	D:\Codes\C++\Problems\cses\lisa.cpp	11;"	d	file:
+sum	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^	ll sum(ll idx) {$/;"	f	struct:fenwick
+sum	D:\Codes\C++\Problems\cses\1648_fen.cpp	/^	ll sum(ll l, ll r) {$/;"	f	struct:fenwick
+test	D:\Codes\C++\Problems\cses\1648_1.cpp	/^void test() {$/;"	f
+ull	D:\Codes\C++\Problems\cses\1068.cpp	3;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1071.cpp	3;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1074.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1079.cpp	5;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1084.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1090.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1091.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1092.cpp	3;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1094.cpp	3;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1141.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1163.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1617.cpp	3;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1618.cpp	3;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1619.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1622.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1623.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1630.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1631.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1633.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1640.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1641.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1643.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1646.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1647.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1648.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1648_1.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1648_fen.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1649.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1650.cpp	8;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1651.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1715.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1716.cpp	5;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1722.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1754.cpp	9;"	d	file:
+ull	D:\Codes\C++\Problems\cses\1755.cpp	7;"	d	file:
+ull	D:\Codes\C++\Problems\cses\lisa.cpp	9;"	d	file:
+update	D:\Codes\C++\Problems\cses\1646.cpp	/^	void update(ll i, ll v) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1646.cpp	/^	void update(ll i, ll v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1647.cpp	/^	void update(ll i, ll v) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1647.cpp	/^	void update(ll i, ll v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1648.cpp	/^	void update(ll i, ll v) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1648.cpp	/^	void update(ll i, ll v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	void update(ll i, ll v) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1648_1.cpp	/^	void update(ll i, ll v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1649.cpp	/^	void update(ll i, ll v) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1649.cpp	/^	void update(ll i, ll v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1650.cpp	/^	void update(ll i, ll v) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1650.cpp	/^	void update(ll i, ll v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1651.cpp	/^	void update(ll a, ll b, ll v) {$/;"	f	struct:segtree
+update	D:\Codes\C++\Problems\cses\1651.cpp	/^	void update(ll l, ll r, ll v, ll x, ll lx, ll rx) {$/;"	f	struct:segtree

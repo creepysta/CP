@@ -1,0 +1,2 @@
+find a ^ b = n and (b - a) is min
+count all nums b/w l to r where binary string of the nums has 1 zero

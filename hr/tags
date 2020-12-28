@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+INF	.\hti4\a.cpp	8;"	d	file:
+INF	.\hti4\b.cpp	4;"	d	file:
+MAX	.\hti4\c.cpp	4;"	d	file:
+MAX	.\hti4\d.cpp	3;"	d	file:
+MIN	.\hti4\a.cpp	9;"	d	file:
+MIN	.\hti4\b.cpp	5;"	d	file:
+MIN	.\hti4\c.cpp	5;"	d	file:
+MIN	.\hti4\d.cpp	4;"	d	file:
+MOD	.\hti4\a.cpp	10;"	d	file:
+MOD	.\hti4\b.cpp	6;"	d	file:
+MOD	.\hti4\c.cpp	6;"	d	file:
+MOD	.\hti4\d.cpp	5;"	d	file:
+MOD	.\hti4\junk.cpp	4;"	d	file:
+MOD	.\world-codesprint-5\lisa.cpp	/^const ll MOD = 1e9 + 7;$/;"	v
+block	.\hti4\c.cpp	/^	block(ll _x, ll _y, ll _d) : x(_x), y(_y), d(_d){};$/;"	f	struct:block
+block	.\hti4\c.cpp	/^struct block {$/;"	s	file:
+count	.\hti4\d.cpp	/^int count(int x, int k) {$/;"	f
+d	.\hti4\c.cpp	/^	ll x, y, d;$/;"	m	struct:block	file:
+dp	.\hti4\d.cpp	/^int dp[102][102][2];$/;"	v
+endl	.\hti4\a.cpp	11;"	d	file:
+endl	.\hti4\b.cpp	7;"	d	file:
+endl	.\hti4\c.cpp	7;"	d	file:
+endl	.\hti4\d.cpp	6;"	d	file:
+endl	.\hti4\junk.cpp	5;"	d	file:
+endl	.\world-codesprint-5\lisa.cpp	12;"	d	file:
+fact	.\world-codesprint-5\lisa.cpp	/^ll fact(ll a, ll mod) {$/;"	f
+ff	.\world-codesprint-5\lisa.cpp	10;"	d	file:
+findPath	.\hti4\junk.cpp	/^pair<ll,ll> findPath(vector<vector<ll>> &a, ll i, ll j, ll n, ll m, pair<ll, ll> prev) {$/;"	f
+findinrange	.\hti4\d.cpp	/^int findinrange(int pos, int cnt, int tight, vector<int> &num, int k) {$/;"	f
+ld	.\world-codesprint-5\lisa.cpp	8;"	d	file:
+ll	.\hti4\a.cpp	7;"	d	file:
+ll	.\hti4\b.cpp	3;"	d	file:
+ll	.\hti4\c.cpp	3;"	d	file:
+ll	.\hti4\junk.cpp	3;"	d	file:
+ll	.\world-codesprint-5\lisa.cpp	7;"	d	file:
+main	.\hti4\a.cpp	/^int main() {$/;"	f
+main	.\hti4\b.cpp	/^int main() {$/;"	f
+main	.\hti4\c.cpp	/^int main() {$/;"	f
+main	.\hti4\d.cpp	/^int main() {$/;"	f
+main	.\hti4\junk.cpp	/^int main() {$/;"	f
+main	.\world-codesprint-5\lisa.cpp	/^int32_t main() {$/;"	f
+operator <	.\hti4\c.cpp	/^bool operator<(const block &a, const block &b) {$/;"	f
+power	.\world-codesprint-5\lisa.cpp	/^ll power(ll a, ll b, ll mod) {$/;"	f
+solve	.\hti4\a.cpp	/^void solve() {$/;"	f
+solve	.\hti4\b.cpp	/^void solve() {$/;"	f
+solve	.\hti4\c.cpp	/^void solve() {$/;"	f
+solve	.\hti4\d.cpp	/^void solve() {$/;"	f
+solve	.\hti4\junk.cpp	/^void solve() {$/;"	f
+solve	.\world-codesprint-5\lisa.cpp	/^void solve() {$/;"	f
+ss	.\world-codesprint-5\lisa.cpp	11;"	d	file:
+ull	.\world-codesprint-5\lisa.cpp	9;"	d	file:
+x	.\hti4\c.cpp	/^	ll x, y, d;$/;"	m	struct:block	file:
+y	.\hti4\c.cpp	/^	ll x, y, d;$/;"	m	struct:block	file:

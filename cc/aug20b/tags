@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+INF	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^const int INF = 1000 * 1000 * 1000;$/;"	v
+MAX	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^const int MAX = 500005;$/;"	v
+add	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int add(int a, int b) {$/;"	f
+answer	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int answer[MAX];$/;"	v
+brute	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^void brute(ll n, const vector<ll> &a) {$/;"	f
+byCnt	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^vector<int> byCnt[MAX];$/;"	v
+c	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int c(int n , int k) {$/;"	f
+choose	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^ull choose(ull n, ull k) {$/;"	f
+cnt	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int cnt[MAX];$/;"	v
+cnt2	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int cnt2[MAX];$/;"	v
+divide	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^ull divide(ull a, ull b) {$/;"	f
+endl	D:\Codes\C++\Problems\cc\aug20b\a.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cc\aug20b\b.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cc\aug20b\c.cpp	9;"	d	file:
+endl	D:\Codes\C++\Problems\cc\aug20b\d.cpp	5;"	d	file:
+endl	D:\Codes\C++\Problems\cc\aug20b\e.cpp	5;"	d	file:
+endl	D:\Codes\C++\Problems\cc\aug20b\f.cpp	7;"	d	file:
+endl	D:\Codes\C++\Problems\cc\aug20b\g.cpp	5;"	d	file:
+fact	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int fact[MAX];$/;"	v
+ff	D:\Codes\C++\Problems\cc\aug20b\f.cpp	12;"	d	file:
+ff	D:\Codes\C++\Problems\cc\aug20b\g.cpp	7;"	d	file:
+gcd	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^ull gcd(ull x, ull y) {$/;"	f
+inv	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int inv[MAX];$/;"	v
+ld	D:\Codes\C++\Problems\cc\aug20b\a.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cc\aug20b\b.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cc\aug20b\c.cpp	8;"	d	file:
+ld	D:\Codes\C++\Problems\cc\aug20b\d.cpp	4;"	d	file:
+ld	D:\Codes\C++\Problems\cc\aug20b\e.cpp	4;"	d	file:
+ld	D:\Codes\C++\Problems\cc\aug20b\f.cpp	11;"	d	file:
+ld	D:\Codes\C++\Problems\cc\aug20b\g.cpp	4;"	d	file:
+ll	D:\Codes\C++\Problems\cc\aug20b\a.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cc\aug20b\b.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cc\aug20b\c.cpp	7;"	d	file:
+ll	D:\Codes\C++\Problems\cc\aug20b\d.cpp	3;"	d	file:
+ll	D:\Codes\C++\Problems\cc\aug20b\e.cpp	3;"	d	file:
+ll	D:\Codes\C++\Problems\cc\aug20b\f.cpp	9;"	d	file:
+ll	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	2;"	d	file:
+ll	D:\Codes\C++\Problems\cc\aug20b\g.cpp	3;"	d	file:
+main	D:\Codes\C++\Problems\cc\aug20b\a.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cc\aug20b\b.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cc\aug20b\c.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cc\aug20b\check.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\Problems\cc\aug20b\d.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cc\aug20b\e.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int main() {$/;"	f
+main	D:\Codes\C++\Problems\cc\aug20b\g.cpp	/^int main() {$/;"	f
+mod	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^const int mod = 1e9 + 7;$/;"	v
+mod	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^const int mod = 1000 * 1000 * 1000 + 7;$/;"	v
+modPow	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int modPow(int a, int step) {$/;"	f
+mp	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	6;"	d	file:
+mult	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int mult(int a, int b) {$/;"	f
+nax	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^const int nax = 1e9 + 5;$/;"	v
+opt	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^void opt(ll n, const vector<ll> &a) {$/;"	f
+pb	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	3;"	d	file:
+pii	D:\Codes\C++\Problems\cc\aug20b\f.cpp	14;"	d	file:
+pii	D:\Codes\C++\Problems\cc\aug20b\f.cpp	8;"	d	file:
+pii	D:\Codes\C++\Problems\cc\aug20b\g.cpp	6;"	d	file:
+pll	D:\Codes\C++\Problems\cc\aug20b\f.cpp	15;"	d	file:
+power	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^ull power(ull a, ull b) {$/;"	f
+prefC	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int prefC[MAX];$/;"	v
+solve	D:\Codes\C++\Problems\cc\aug20b\a.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cc\aug20b\b.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cc\aug20b\c.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cc\aug20b\d.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cc\aug20b\e.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cc\aug20b\f.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\Problems\cc\aug20b\g.cpp	/^void solve() {$/;"	f
+ss	D:\Codes\C++\Problems\cc\aug20b\f.cpp	13;"	d	file:
+ss	D:\Codes\C++\Problems\cc\aug20b\g.cpp	8;"	d	file:
+sub	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	/^int sub(int a, int b) {$/;"	f
+sz	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	7;"	d	file:
+ull	D:\Codes\C++\Problems\cc\aug20b\f.cpp	10;"	d	file:
+x	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	4;"	d	file:
+y	D:\Codes\C++\Problems\cc\aug20b\ff.cpp	5;"	d	file:
