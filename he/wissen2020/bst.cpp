@@ -1,53 +1,92 @@
-/*
-	author: Creepysta
-	14-12-2020 08:07:07
-*/
 #include <bits/stdc++.h>
 using namespace std;
-
-const int MOD = int(1e9) + 7;
-
-void solve() {
+ 
+const int N = 100001;
+int ans[N];
+ 
+void merge(pair<int, int> a[], int start,
+                int mid, int end) {
+    pair<int, int> f[mid - start + 1],
+                   s[end - mid];
+                    
+    int n = mid - start + 1;
+    int m = end - mid;
+     
+    for(int i = start; i <= mid; i++)
+        f[i - start] = a[i];
+    for(int i = mid + 1; i <= end; i++)
+        s[i - mid - 1] = a[i];
+         
+    int i = 0, j = 0, k = start;
+    int cnt = 0;
+ 
+    // Loop to store the count of smaller 
+    // Elements on right side when both 
+    // Array have some elements 
+    while(i < n && j < m) {
+        if (f[i].second <= s[j].second) {
+            ans[f[i].first] += cnt;
+            a[k++] = f[i++];
+        }
+        else {
+            cnt++;
+            a[k++] = s[j++];
+        }
+    }
+ 
+    // Loop to store the count of smaller 
+    // elements in right side when only 
+    // left array have some element 
+    while(i < n) {
+        ans[f[i].first] += cnt;
+        a[k++] = f[i++];
+    }
+ 
+    // Loop to store the count of smaller 
+    // elements in right side when only 
+    // right array have some element 
+    while(j < m) {
+        a[k++] = s[j++];
+    }
+}
+ 
+// Function to invoke merge sort.
+void mergesort(pair<int, int> item[],
+                    int low, int high) {
+    if (low >= high)
+        return;
+         
+    int mid = (low + high) / 2;
+    mergesort(item, low, mid);
+    mergesort(item, mid + 1, high);
+    merge(item, low, mid, high);
+}
+ 
+// Utility function that prints 
+// out an array on a line 
+void print(int arr[], int n) {
+    for(int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+}
+ 
+// Driver code.
+int main() {
 	int n;
 	cin >> n;
-	vector<int> a(n);
+	int arr[n];
 	for(int i = 0; i < n; i++) {
-		cin >> a[i];
+		cin >> arr[i];
 	}
-	stack<int> small, big;
-	vector<int> cs(n), cb(n);
-	cs[0] = 0, cb[n-1] = 0;
-	small.push(a[0]), big.push(a[n-1]);
-	for(int i = 1; i < n; i++) {
-		small.push(a[i]);
-		while(!small.empty() && small.top() > a[i])
-			small.pop();
-		cs[i] = small.size();
-	}
-	for(int i = n-2; i >= 0; i--) {
-		big.push(a[i]);
-		while(!big.empty() && big.top() < a[i])
-			big.pop();
-		cb[i] = big.size();
-	}
-	vector<int> ans(n);
-	for(int i = 0; i < n; i++) {
-		ans[i] = max(cs[i], cb[i]);
-	}
-	for(int i : ans)
-		cout << i << ' ';
-	cout << '\n';
+    pair<int, int> a[n];
+    memset(ans, 0, sizeof(ans));
+     
+    for(int i = 0; i < n; i++) {
+        a[i].second = arr[i];
+        a[i].first = i;
+    }
+     
+    mergesort(a, 0, n - 1);
+    print(ans, n);
+     
+    return 0; 
 }
-
-int main() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(nullptr);
-	cout.tie(nullptr);
-	int t = 1;
-	for(int tt = 1; tt <= t; tt++) {
-		// cout << "Case #" << tt << ": ";
-		solve();
-	}
-	return 0;
-}
-

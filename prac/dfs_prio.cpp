@@ -10,19 +10,12 @@ void dfs(int u) {
 	vis[u] = true;
 	for(auto v : g[u]) {
 		int to = get<2>(v);
-		int w = -1 * get<1>(v);
+		int w = get<1>(v);
 		if(!vis[to]) {
 			timer += w;
 			ans[to] = timer;
-			//printf("%d -> %d (%I64d)\n", u, to, ans[to]);
 			dfs(to);
-			//bool check = true;
-			//for(bool vv : vis)
-			//	check &= vv;
-			//if(check)
-			//	return;
 			timer += w;
-			//printf("%d -> %d (%I64d)\n", to, u, timer);
 		}
 	}
 }
@@ -41,11 +34,11 @@ void solve() {
 	for(int i = 0; i < m; i++) {
 		int x, y, w;
 		cin >> x >> y >> w;
-		g[x].push_back(make_tuple(prior[y], -w, y));
-		g[y].push_back(make_tuple(prior[x], -w, x));
+		g[x].push_back(make_tuple(-prior[y], w, y));
+		g[y].push_back(make_tuple(-prior[x], w, x));
 	}
 	for(int i = 0; i < n; i++) {
-		sort(g[i].rbegin(), g[i].rend());
+		sort(g[i].begin(), g[i].end());
 	}
 	dfs(0);
 	for(int64_t i : ans)

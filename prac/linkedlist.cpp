@@ -13,7 +13,7 @@ template<class T> class LinkedList {
 	Node *node, *head;
 	public:
 	LinkedList() : node(NULL), head(NULL) {};
-	void addNode(ll data) {
+	void insert(ll data) {
 		if(head == NULL) {
 			head = new Node(data);
 		}
@@ -63,7 +63,7 @@ template<class T> class LinkedList {
 
 int main () {
 	LinkedList<int> linkedList;
-	for(ll i=0;i < 5; i++) linkedList.addNode(i+1);
+	for(ll i=0;i < 5; i++) linkedList.insert(i+1);
 	linkedList.show();
 	linkedList.rev();
 	linkedList.show();

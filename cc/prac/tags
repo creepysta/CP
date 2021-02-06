@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+MOD	D:\Codes\C++\CP\cc\prac\chandf.cpp	/^const int MOD = int(1e9) + 7;$/;"	v
+MOD	D:\Codes\C++\CP\cc\prac\splst.cpp	/^const int MOD = int(1e9) + 7;$/;"	v
+P	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	P() : x(0), y(0) {}$/;"	f	struct:P
+P	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	P(int _x, int _y) : x(_x) , y(_y) {}$/;"	f	struct:P
+P	D:\Codes\C++\CP\cc\prac\contain.cpp	/^struct P {$/;"	s	file:
+compute	D:\Codes\C++\CP\cc\prac\contain.cpp	/^void compute() {$/;"	f
+cross	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	int cross (const P& p1, const P& p2) const {$/;"	f	struct:P
+hulls	D:\Codes\C++\CP\cc\prac\contain.cpp	/^vector<vector<P>> hulls;$/;"	v
+init	D:\Codes\C++\CP\cc\prac\contain.cpp	/^void init() {$/;"	f
+inside	D:\Codes\C++\CP\cc\prac\contain.cpp	/^bool inside(P p, const vector<P> &poly) {$/;"	f
+int	D:\Codes\C++\CP\cc\prac\chandf.cpp	6;"	d	file:
+int	D:\Codes\C++\CP\cc\prac\contain.cpp	2;"	d	file:
+m	D:\Codes\C++\CP\cc\prac\contain.cpp	/^int n, m;$/;"	v
+main	D:\Codes\C++\CP\cc\prac\chandf.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\CP\cc\prac\contain.cpp	/^int32_t main() {$/;"	f
+main	D:\Codes\C++\CP\cc\prac\splst.cpp	/^int main() {$/;"	f
+n	D:\Codes\C++\CP\cc\prac\contain.cpp	/^int n, m;$/;"	v
+operator *	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	int operator *(const P &p) const {$/;"	f	struct:P
+operator -	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	P operator -(const P &p) const {$/;"	f	struct:P
+operator <	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	bool operator <(const P &a) const {$/;"	f	struct:P
+operator <<	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	friend ostream& operator <<(ostream& out, const P &p) {$/;"	f	struct:P
+operator <<	D:\Codes\C++\CP\cc\prac\contain.cpp	/^ostream & operator << (ostream &out, const vector<T> v) {$/;"	f
+points	D:\Codes\C++\CP\cc\prac\contain.cpp	/^vector<P> points;$/;"	v
+queries	D:\Codes\C++\CP\cc\prac\contain.cpp	/^vector<P> queries;$/;"	v
+read	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	void read() {$/;"	f	struct:P
+solve	D:\Codes\C++\CP\cc\prac\chandf.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\CP\cc\prac\contain.cpp	/^void solve() {$/;"	f
+solve	D:\Codes\C++\CP\cc\prac\splst.cpp	/^void solve() {$/;"	f
+taken	D:\Codes\C++\CP\cc\prac\contain.cpp	/^vector<bool> taken;$/;"	v
+x	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	int x, y;$/;"	m	struct:P	file:
+y	D:\Codes\C++\CP\cc\prac\contain.cpp	/^	int x, y;$/;"	m	struct:P	file:
