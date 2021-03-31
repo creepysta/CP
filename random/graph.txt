@@ -1,0 +1,13 @@
+walk -> alt seq of vertices and edges
+trail -> walk with no repeated edges
+path -> walk with no repeated vertices
+circuit : closed trail
+cycle : closed path
+
+eulerian trail : contains all edges > every internal vertex has even degree
+mutligraph is eulerian if it has an Eulerian circuit
+
+a multigraph G is bipartite iff G does not have an odd cycle
+
+every loopless multigraph G has a bipartite subgraph of e(G)/2 edges
+Every closed odd walk contains an odd cycle

@@ -1,7 +1,29 @@
+/*
+	author: Creepysta
+	28-03-2021 12:32:02
+*/
 #include <bits/stdc++.h>
 using namespace std;
+const int MOD = int(1e9) + 7;
+#define int int64_t
+#ifdef LOCAL
+#define debug(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); cerr << "debug: [ "; err(_it, args); }
+#else
+#define debug(args...) 0;
+#endif
+#define tmpt template < class T
+#define ostop ostream& operator<<(ostream& o
+#define itfr { o << "[";for(auto e : x) o << e << ", "; o<<"\b\b]"; return o;}
+void err(istream_iterator<string> it) { cerr << "\b\b ]\n";}
+tmpt , class... Args>
+void err(istream_iterator<string> it, T a, Args... args) { cerr << *it << ": "  << a << ", "; err(++it, args...); }
+tmpt > ostop , const vector<T> &x) itfr
+tmpt > ostop , const set<T> &x) itfr
+tmpt , class V> ostop , const map<T,V> &x) itfr
+tmpt , class V> ostop , const pair<T,V> &p) { o << "(";o << p.first << ", " << p.second << ")"; return o;}
 
 vector<tuple<int, int, int, int>> classRange;
+vector<pair<string, int>> names;
 vector<int> whatiswhat;
 vector<int> myTicket;
 vector<vector<int>> tickets;
@@ -24,6 +46,7 @@ void parse(const string &filename) {
 	while(getline(ifs, classline) && classline.length()) {
 		int t1, f1, t2, f2;
 		int pos = classline.find(':');
+		string name =classline.substr(0,pos);
 		string need = classline.substr(pos+1);
 		string mid = " or ";
 		pos = need.find(mid);
@@ -36,6 +59,7 @@ void parse(const string &filename) {
 		t2 = stoi(end.substr(0, pos));
 		f2 = stoi(end.substr(pos+1));
 		classRange.emplace_back(make_tuple(t1, f1, t2, f2));
+		names.emplace_back(name, classRange.size()-1);
 	}
 
 	auto parseTicket = [&] (string ticket) {
@@ -123,7 +147,7 @@ void one() {
 
 void two() {
 	// consider my ticket
-	tickets.push_back(myTicket);
+	//tickets.push_back(myTicket);
 	valid.push_back(true);
 
 	for(size_t tIdx = 0; tIdx < tickets.size(); tIdx++) {
@@ -151,22 +175,57 @@ void two() {
 			}
 		}
 	}
-	for(size_t pIdx = 0; pIdx < workout.size(); pIdx++) {
-		cout << pIdx << ": ";
-		for(size_t cIdx = 0; cIdx < workout[pIdx].size(); cIdx++)
-			cout << workout[pIdx][cIdx] << ' ';
-		cout << endl;
+	int ws = workout.size();
+	vector<int> pos(ws);
+	for(int i = 0; i < ws; i++) {
+		pos[i] = i;
 	}
-	//int64_t sum = 0;
-	//for(int i = 0; i < 6; i++) {
-	//	sum += myTicket[whatiswhat[i]];
-	//}
-	//cout << sum << endl;
+	sort(pos.begin(), pos.end(), [&](int a, int b) {
+			return workout[a].size() < workout[b].size();
+			});
+	for(size_t pIdx = 0; pIdx < workout.size(); pIdx++) {
+		debug(pos[pIdx], workout[pos[pIdx]])
+	}
+	for(auto e : names)
+		debug(e)
+	set<int> choices;
+	for(int i = 0; i < 20; i++)
+		choices.insert(i);
+
+	int whs = whatiswhat.size();
+	debug(pos[0], workout[pos[0]],choices)
+	for(int i = 0; i < whs; i++) {
+		ws = workout[pos[i]].size();
+		int cls = 0;
+		while(cls < ws && choices.find(workout[pos[i]][cls]) == choices.end())
+			cls++;
+		assert(choices.find(workout[pos[i]][cls]) != choices.end());
+		whatiswhat[pos[i]] = workout[pos[i]][cls];
+		choices.erase(choices.find(workout[pos[i]][cls]));
+		debug(cls, pos[i], workout[pos[i]][cls],choices)
+	}
+	int64_t sum = 1;
+	cout << "Classes: \n";
+	for(int i = 0; i < 20; i++) {
+		debug(pos[i], whatiswhat[pos[i]]);
+	}
+	vector<int> req;
+	for(int i = 0; i < (int) names.size(); i++) {
+		if(names[i].first.find("departure") != string::npos) {
+			req.push_back(names[i].second);
+		}
+	}
+	debug(myTicket, whatiswhat)
+	for(int e : req) {
+		debug(e,pos[e],whatiswhat[pos[e]], myTicket[whatiswhat[pos[e]]])
+		sum *= myTicket[whatiswhat[pos[e]]];
+	}
+	cout << sum << endl;
 }
 
-int main() {
+signed main() {
 #ifdef LOCAL
-	parse("day16.in1");
+	parse("day16.in");
 #else
 	parse("day16.in");
 #endif
