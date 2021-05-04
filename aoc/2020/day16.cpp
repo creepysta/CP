@@ -148,7 +148,7 @@ void one() {
 void two() {
 	// consider my ticket
 	//tickets.push_back(myTicket);
-	valid.push_back(true);
+	//valid.push_back(true);
 
 	for(size_t tIdx = 0; tIdx < tickets.size(); tIdx++) {
 		if(valid[tIdx]) {

@@ -1,6 +1,6 @@
 /*
 	author: Creepysta
-01-05-2021 18:42:25
+01-05-2021 19:33:17
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -22,30 +22,36 @@ tmpt > ostop , const set<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) { o << "(";o << p.first << ", " << p.second << ")"; return o;}
 
-int nax = 1e6 + 5;
-vector<int> primes;
-vector<bool> is;
-
 void solve() {
-
+	string v;
+	cin >> v;
+	int q;
+	cin >> q;
+	while(q--) {
+		string s;
+		cin >> s;
+		int n = v.length(), m = s.length(), i = 0, j = 0;
+		for(; i < n && j < m; ) {
+			if(v[i] == s[j])
+				i++, j++;
+			else
+				i++;
+		}
+		if(j == m)
+			cout << "POSITIVE\n";
+		else
+			cout << "NEGATIVE\n";
+	}
 }
 
 int32_t main() {
 	ios_base::sync_with_stdio(0);
 	cin.tie(0); cout.tie(0);
-	is.clear();
-	is.assign(nax+1, true);
-	is[0] = is[1] = false;
-	for(int i = 0; i <= nax; i++) {
-		if(is[i]) {
-			primes.push_back(i);
-			for(int j = i * i; j <= nax; j+= i) {
-				is[j] = false;
-			}
-		}
+	int t = 1;
+	for(int tt = 1; tt <= t; tt++) {
+		// cout << "Case #" << tt << ": ";
+		solve();
 	}
-	debug(primes.size())
-	//78499;
 	return 0;
 }
 

@@ -3,12 +3,12 @@ using namespace std;
 
 void heapify(vector<int> &a, int x, int n) {
 	int largest = x;
-	int lc = 2*x + 1;
-	int rc = 2*x + 2;
-	if(lc < n && a[largest] < a[lc]) {
+	int lc = 2*x;
+	int rc = 2*x + 1;
+	if(lc <= n && a[largest] < a[lc]) {
 		largest = lc;
 	}
-	if(rc < n && a[largest] < a[rc]) {
+	if(rc <= n && a[largest] < a[rc]) {
 		largest = rc;
 	}
 	if(largest != x) {
@@ -19,13 +19,13 @@ void heapify(vector<int> &a, int x, int n) {
 
 void hs(vector<int> &a, int n) {
 	// build heap
-	for(int i = n/2 - 1; i >= 0; i--) {
+	for(int i = n/2; i > 0; i--) {
 		heapify(a, i, n);
 	}
 	// swap out an elem and construct heap for the rest
-	for(int i = n-1; i > 0; i--) {
-		swap(a[0], a[i]);
-		heapify(a, 0, i);
+	for(int i = n; i > 1; i--) {
+		swap(a[1], a[i]);
+		heapify(a, 1, i-1);
 	}
 }
 

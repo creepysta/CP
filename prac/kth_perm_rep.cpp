@@ -34,7 +34,7 @@ void solve() {
 		freq[c-'A']++;
 	//get kth perm
 	int sum = 1, n = path.length(), idx=0;
-	char ans[26];
+	char ans[path.length() + 1];
 	k++;
 	while (sum != k) {
 		sum = 0;

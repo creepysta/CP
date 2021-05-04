@@ -28,13 +28,12 @@ int findIndex(int &k, int n) {
 	if(n==1)
 		return 0;
 	n--;
-	int fnum_idx;
 	int n_partial_fact = n;
-	while(k >= n_partial_fact && n > 1) {
+	while(n_partial_fact <= k && n > 1) {
 		n_partial_fact *= (n-1);
 		n--;
 	}
-	fnum_idx = k / n_partial_fact;
+	int fnum_idx = k / n_partial_fact;
 	k %= n_partial_fact;
 	return fnum_idx;
 }
@@ -55,7 +54,8 @@ void solve() {
 		s.erase(it);
 		it = s.begin();
 	}
-	return ans;
+	cout << ans << '\n';
+	//return ans;
 }
 
 int modpow(int a, int b, int mod) {

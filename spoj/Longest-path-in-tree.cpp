@@ -1,6 +1,6 @@
 /*
 	author: Creepysta
-01-05-2021 18:42:25
+	02-05-2021 21:46:31
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -22,30 +22,54 @@ tmpt > ostop , const set<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) { o << "(";o << p.first << ", " << p.second << ")"; return o;}
 
-int nax = 1e6 + 5;
-vector<int> primes;
-vector<bool> is;
+vector<vector<int>> g;
+vector<bool> vis;
+int big, ver;
+
+void dfs(int u, int h = 0) {
+	vis[u] = 1;
+	if(h > big) {
+		big = h;
+		ver = u;
+	}
+	for(int v : g[u]) {
+		if(!vis[v]) {
+			dfs(v, h+1);
+		}
+	}
+}
+
 
 void solve() {
-
+	int n;
+	cin >> n;
+	g.resize(n);
+	vis.assign(n, false);
+	for(int i = 0; i < n-1; i++) {
+		int x, y;
+		cin >> x >> y;
+		x--, y--;
+		g[x].push_back(y);
+		g[y].push_back(x);
+	}
+	big = -1;
+	dfs(0);
+	debug(big, ver);
+	big = -1;
+	vis.assign(n, false);
+	dfs(ver);
+	debug(big, ver);
+	cout << big << '\n';
 }
 
 int32_t main() {
 	ios_base::sync_with_stdio(0);
 	cin.tie(0); cout.tie(0);
-	is.clear();
-	is.assign(nax+1, true);
-	is[0] = is[1] = false;
-	for(int i = 0; i <= nax; i++) {
-		if(is[i]) {
-			primes.push_back(i);
-			for(int j = i * i; j <= nax; j+= i) {
-				is[j] = false;
-			}
-		}
+	int t = 1;
+	for(int tt = 1; tt <= t; tt++) {
+		// cout << "Case #" << tt << ": ";
+		solve();
 	}
-	debug(primes.size())
-	//78499;
 	return 0;
 }
 

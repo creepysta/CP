@@ -1,6 +1,6 @@
 /*
 	author: Creepysta
-01-05-2021 18:42:25
+02-05-2021 12:57:57
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -22,30 +22,31 @@ tmpt > ostop , const set<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) { o << "(";o << p.first << ", " << p.second << ")"; return o;}
 
-int nax = 1e6 + 5;
-vector<int> primes;
-vector<bool> is;
-
 void solve() {
-
+	int n;
+	cin >> n;
+	int ans = n;
+	for(int i = 2; i * i <= n; i++) {
+		if(n % i == 0) {
+			while(n % i == 0)
+				n /= i;
+			ans -= ans / i;
+		}
+	}
+	if(n > 1)
+		ans -= ans / n;
+	cout << ans << '\n';
 }
 
 int32_t main() {
 	ios_base::sync_with_stdio(0);
 	cin.tie(0); cout.tie(0);
-	is.clear();
-	is.assign(nax+1, true);
-	is[0] = is[1] = false;
-	for(int i = 0; i <= nax; i++) {
-		if(is[i]) {
-			primes.push_back(i);
-			for(int j = i * i; j <= nax; j+= i) {
-				is[j] = false;
-			}
-		}
+	int t = 1;
+	cin >> t;
+	for(int tt = 1; tt <= t; tt++) {
+		// cout << "Case #" << tt << ": ";
+		solve();
 	}
-	debug(primes.size())
-	//78499;
 	return 0;
 }
 
