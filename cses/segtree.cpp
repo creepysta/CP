@@ -113,7 +113,7 @@ void test() {
 			cout << s.query(i-1, j-1) << endl;
 		}
 	}
-}	
+}
 
 int32_t main() {
 	ios_base::sync_with_stdio(false);
