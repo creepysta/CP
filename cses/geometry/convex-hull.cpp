@@ -40,6 +40,9 @@ void init() {
 void compute() {
 	vector<P> hull;
 	vector<P> temp (points.begin(), points.end());
+	// first take top half
+	// only after considering the next point check the most recent last 3
+	// points to decide whether i-1th point should stay or go from hull
 	for(int rep = 0; rep < 2; rep++) {
 		const int S = hull.size();
 		for(P C: temp) {
@@ -53,7 +56,8 @@ void compute() {
 			}
 			hull.push_back(C);
 		}
-		hull.pop_back();
+		hull.pop_back(); // remove the last point since it will be included in
+						// the bottom tree
 		reverse(temp.begin(), temp.end());
 	}
 	hulls.push_back(hull);

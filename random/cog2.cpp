@@ -21,8 +21,11 @@ tmpt > ostop , const set<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) { o << "(";o << p.first << ", " << p.second << ")"; return o;}
 
-//#include <bits/stdc++.h>
-//using namespace std;
+/*
+ * techgig - cognizant
+ * given l, r find the difference between the largest and smallest prime number
+ * in that range
+ * */
 #define ll int64_t
 
 const int nax = 1e4+5;

@@ -22,6 +22,10 @@ tmpt > ostop , const set<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) { o << "(";o << p.first << ", " << p.second << ")"; return o;}
 
+/* techgig - cognizant
+ * given string S and q strings qs check if qs is a subsequence of string S
+ *
+ */
 void solve() {
 	string v;
 	cin >> v;

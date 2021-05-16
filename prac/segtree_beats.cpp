@@ -47,8 +47,11 @@ struct SegBeats {
 			return value > maxVal2;
 		}
 		friend ostream& operator<<(ostream& o, const Node &n) {
-			o << "[" << n.maxVal << ' ' << n.maxVal2 << ' ' << n.cntMax << ' '
-				<< n.sum << ' ' << n.minVal << "]";
+			o << "[" << n.maxVal << ' ' <<
+				n.maxVal2 << ' ' << n.cntMax << ' ' <<
+				n.sum <<
+				//' ' << n.minVal <<
+				"]";
 			return o;
 		}
 	};
