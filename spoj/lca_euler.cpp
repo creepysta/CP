@@ -55,7 +55,7 @@ struct LCA {
 	}
 	int lca(int u, int v) {
 		int left = first[u], right = first[v];
-		if(left > right) 
+		if(left > right)
 			swap(left, right);
 		return query(left, right);
 	}

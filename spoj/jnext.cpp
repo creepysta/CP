@@ -1,6 +1,6 @@
 /*
 	author: Creepysta
-
+	25-05-2021 00:48:24
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -25,7 +25,26 @@ tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) {o<<"(";o<<p.first<<", "<<p.second<<")";return o;}
 
 void solve() {
-
+	int n;
+	cin >> n;
+	vector<int> a(n);
+	for(int &i : a)
+		cin >> i;
+	int i = n-1;
+	while(i > 0 && a[i-1] >= a[i])
+		i--;
+	if(i==0) {
+		cout << -1 << "\n";
+		return;
+	}
+	int tobe = i-1;
+	int small = n-1;
+	while(small > tobe && a[small] <= a[tobe]) small --;
+	swap(a[small], a[tobe]);
+	sort(a.begin()+tobe+1, a.end());
+	for(int e : a)
+		cout << e;
+	cout << "\n";
 }
 
 int32_t main() {
@@ -39,3 +58,4 @@ int32_t main() {
 	}
 	return 0;
 }
+

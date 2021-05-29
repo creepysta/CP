@@ -1,17 +1,16 @@
+//https://www.spoj.com/problems/DOTAA/
 /*
 	author: Creepysta
-
+	17-05-2021 21:17:10
 */
 #include <bits/stdc++.h>
 using namespace std;
 const int MOD = int(1e9) + 7;
 #define int int64_t
 #ifdef LOCAL
-#define FIO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define debug(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); cerr << boolalpha << "[ "; err(_it, args); }
 #else
-#define debug(args...) ;
-#define FIO ;
+#define debug(args...) 0;
 #endif
 #define tmpt template < class T
 #define ostop ostream& operator<<(ostream& o
@@ -24,8 +23,29 @@ tmpt > ostop , const multiset<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) {o<<"(";o<<p.first<<", "<<p.second<<")";return o;}
 
+#define all(x) (x).begin(),(x).end()
 void solve() {
-
+	int n, m, d;
+	cin >> n >> m >> d;
+	vector<int> health(n);
+	for(int &i : health)
+		cin >> i;
+	int i = 0;
+	//sort(all(health));
+	while(m--) {
+		while(i < n && health[i] <= d)
+			i++;
+		if(i == n) {
+			cout << "NO\n";
+			return;
+		}
+		health[i] -= d;
+		if(health[i] > d)
+			i--;
+		if(i < 0) i++;
+	}
+	if(m <= 0)
+		cout << "YES\n";
 }
 
 int32_t main() {
@@ -39,3 +59,4 @@ int32_t main() {
 	}
 	return 0;
 }
+

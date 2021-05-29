@@ -24,18 +24,69 @@ tmpt , class V> ostop , const pair<T,V> &p) {o<<"(";o<<p.first<<", "<<p.second<<
 
 #define ff first
 #define ss second
-#define pii pair<int, int>
+typedef pair<int, int> pii;
 
-vector<pii> g;
+vector<vector<pii>> g;
 
 struct LCA {
 	vector<int> depth;
-	vector<vector<int>> par;
+	vector<vector<int>> par, maxd, mind;
 	int LOG, n;
-	void dfs(int u, int p = -1) {
-		for(auto v : g[u]) {
-
+	const int nax = 1e12;
+	LCA() {
+		n = g.size();
+		LOG = ceil(log2(n)) + 1;
+		depth.resize(n);
+		par.resize(n, vector<int> (LOG));
+		maxd.resize(n, vector<int> (LOG, -nax));
+		mind.resize(n, vector<int> (LOG, nax));
+		dfs(make_pair(0, 0), 0);
+	}
+	void dfs(pii e, int p = -1) {
+		par[e.ff][0] = p;
+		depth[e.ff] = depth[p] + 1;
+		mind[e.ff][0] = maxd[e.ff][0] = e.ss;
+		for(int j = 1; j < LOG; j++) {
+			par[e.ff][j] = par[par[e.ff][j-1]][j-1];
+			mind[e.ff][j] = min(mind[e.ff][j-1],
+					mind[par[e.ff][j-1]][j-1]);
+			maxd[e.ff][j] = max(maxd[e.ff][j-1],
+					maxd[par[e.ff][j-1]][j-1]);
 		}
+		for(auto ve : g[e.ff]) {
+			if(ve.ff != p)
+				dfs(ve, e.ff);
+		}
+	}
+	pii get(int a, int b) {
+		if(depth[a] > depth[b]) {
+			swap(a, b);
+		}
+		// 1) Get same depth.
+		int k = depth[b] - depth[a], big = -nax, small = nax;
+		for(int j = LOG - 1; j >= 0; j--) {
+			if(k & (1 << j)) {
+				big = max(big, maxd[b][j]);
+				small = min(small, mind[b][j]);
+				b = par[b][j]; // parent of a
+			}
+		}
+		// 2) if b was ancestor of a then now a==b
+		if(a == b) {
+			return {small, big};
+		}
+		// 3) move both a and b with powers of two
+		for(int j = LOG - 1; j >= 0; j--) {
+			if(par[a][j] != par[b][j]) {
+				big = max(big, max(maxd[b][j], maxd[a][j]));
+				small = min(small, min(mind[b][j], mind[a][j]));
+				a = par[a][j];
+				b = par[b][j];
+			}
+		}
+		big = max(big, max(maxd[b][0], maxd[a][0]));
+		small = min(small, min(mind[b][0], mind[a][0]));
+		return {small, big};
 	}
 };
 
@@ -44,15 +95,21 @@ void solve() {
 	cin >> n;
 	g.resize(n);
 	for(int i = 0; i < n-1; i++) {
-		int v, w;
-		cin >> v >> w;
-		g[i].emplace_back(v, w);
+		int u, v, w;
+		cin >> u >> v >> w;
+		u--, v--;
+		g[u].emplace_back(v, w);
+		g[v].emplace_back(u, w);
 	}
+	LCA lca;
 	cin >> q;
+	debug(n, q);
 	while(q--) {
 		int u, v;
 		cin >> u >> v;
-		// find shortest and longest path between them
+		u--, v--;
+		auto ans = lca.get(u, v);
+		cout << ans.ff << " " << ans.ss << "\n";
 	}
 }
 

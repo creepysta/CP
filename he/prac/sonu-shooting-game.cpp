@@ -1,6 +1,6 @@
 /*
 	author: Creepysta
-
+	26-05-2021 20:34:00
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -24,8 +24,29 @@ tmpt > ostop , const multiset<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) {o<<"(";o<<p.first<<", "<<p.second<<")";return o;}
 
-void solve() {
+vector<vector<double>> dp;
+int x, y;
+double p1, p2;
 
+double f (int n, int w) {
+	if(w <= 0)
+		return 1.0;
+	if(n == 0)
+		return 0.0;
+	if(dp[n][w] != -1.0)
+		return dp[n][w];
+	return dp[n][w] = max(
+			f(n-1, w-x) * p1 + f(n-1, w) * (1-p1),
+			f(n-1, w-y) * p2 + f(n-1, w) * (1-p2)
+			);
+}
+
+void solve() {
+	int n, w;
+	cin >> x >> y >> n >> w >> p1 >> p2;
+	p1 /= 100.0, p2 /= 100.0;
+	double ans = f(n, w) * 100.0;
+	cout << setprecision(6) << fixed << ans << "\n";
 }
 
 int32_t main() {
@@ -35,7 +56,9 @@ int32_t main() {
 	cin >> t;
 	for(int tt = 1; tt <= t; tt++) {
 		// cout << "Case #" << tt << ": ";
+		dp = vector<vector<double>> (1010, vector<double> (1010, -1.0));
 		solve();
 	}
 	return 0;
 }
+

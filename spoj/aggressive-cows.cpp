@@ -1,6 +1,6 @@
 /*
 	author: Creepysta
-
+	23-05-2021 12:59:13
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -8,7 +8,7 @@ const int MOD = int(1e9) + 7;
 #define int int64_t
 #ifdef LOCAL
 #define FIO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#define debug(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); cerr << boolalpha << "[ "; err(_it, args); }
+#define debug(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); cerr << boolalpha << "debug: [ "; err(_it, args); }
 #else
 #define debug(args...) ;
 #define FIO ;
@@ -24,8 +24,39 @@ tmpt > ostop , const multiset<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) {o<<"(";o<<p.first<<", "<<p.second<<")";return o;}
 
-void solve() {
+int n, c;
+vector<int> a;
 
+bool put(int dist) {
+	int prev = a[0], placed = 1;
+	for(int i = 1; i < n; i++) {
+		if(a[i] - prev >= dist) {
+			prev = a[i];
+			placed ++;
+		}
+		if(placed == c)
+			return 1;
+	}
+	return 0;
+}
+
+void solve() {
+	cin >> n >> c;
+	a = vector<int> (n);
+	for(int & i : a)
+		cin >> i;
+	sort(a.begin(), a.end());
+	int lo = a[0], hi = a[n-1], mind = -1;
+	while(lo <= hi) {
+		int mid = lo + (hi - lo) / 2;
+		if(put(mid)) {
+			mind = mid;
+			lo = mid + 1;
+		}
+		else
+			hi = mid - 1;
+	}
+	cout << mind << "\n";
 }
 
 int32_t main() {
@@ -39,3 +70,6 @@ int32_t main() {
 	}
 	return 0;
 }
+
+// ABCDEF
+// 4 sum 0
