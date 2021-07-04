@@ -27,7 +27,7 @@ vector<vector<ll>> multiply(vector<vector<ll>> dp, vector<vector<ll>> mul) {
 }
 
 ll power(ll n) {
-	vector<vector<ll>> a = {{0,1}, {1, 1}}, res = {{0,1}, {1, 1}};
+	vector<vector<ll>> a {{0,1}, {1, 1}}, res {{0,1}, {1, 1}};
 	while(n) {
 		if(n & 1) res = multiply(res, a);
 		a = multiply(a, a);

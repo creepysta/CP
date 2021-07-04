@@ -1,11 +1,12 @@
 /*
-	author: Creepysta
-
+    author: Creepysta
+    03-07-2021 12:17:07
 */
 #include <bits/stdc++.h>
 using namespace std;
-const int MOD = int(1e9) + 7;
 #define int int64_t
+const int INF = int(1e12) + 7;
+const int MOD = int(1e9) + 7;
 #ifdef LOCAL
 #define FIO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define debug(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); cerr << boolalpha << "[ "; err(_it, args); }
@@ -19,25 +20,41 @@ const int MOD = int(1e9) + 7;
 void err(istream_iterator<string> it) {cerr<<"\b\b ]\n";}
 tmpt , class... Args> void err(istream_iterator<string> it, T a, Args... args) { cerr<<*it<<": "<<a<< ", ";err(++it,args...);}
 tmpt > ostop , const vector<T> &x) itfr
-tmpt > ostop , const array<T, int> &x) itfr
 tmpt > ostop , const set<T> &x) itfr
 tmpt > ostop , const multiset<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) {o<<"(";o<<p.first<<", "<<p.second<<")";return o;}
 
+vector<vector<int>> dp;
+
+/*
+state : max_pages(take book, ignore book)
+
+*/
 void solve() {
-	array<int, 3> a{1, 2, 3};
-	debug(a);
+    int n, x;
+    cin >> n >> x;
+    vector<int> price(n), pages(n);
+    for(int i = 0; i < n; i++)
+        cin >> price[i];
+    for(int i = 0; i < n; i++)
+        cin >> pages[i];
+    dp = vector<vector<int>>(n+1, vector<int> (x+1, -INF));
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+
+        }
+    }
 }
 
 int32_t main() {
-	ios_base::sync_with_stdio(0);
-	cin.tie(0); cout.tie(0);
-	int t = 1;
-	cin >> t;
-	for(int tt = 1; tt <= t; tt++) {
-		// cout << "Case #" << tt << ": ";
-		solve();
-	}
-	return 0;
+    FIO;
+    int t = 1;
+    cin >> t;
+    for(int tt = 1; tt <= t; tt++) {
+        // cout << "Case #" << tt << ": ";
+        solve();
+    }
+    return 0;
 }
+

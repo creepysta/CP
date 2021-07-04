@@ -110,9 +110,7 @@ void solve(int t) {
 	queue<pii> q;
 	for(int i = 0; i < n; i++) {
 		for(int j = 0; j < m; j++) {
-			if(a[i][j] == 0)
-				dis[i][j] = INT64_MAX;
-			else
+			if(a[i][j])
 				q.emplace(i, j), vis[i][j] = 1;
 		}
 	}
@@ -134,10 +132,7 @@ void solve(int t) {
 	multiSrcBfs();
 	for(int i = 0; i < n; i++) {
 		for(int j = 0; j < m; j++) {
-			//if(a[i][j])
-				//cout << 0 << " ";
-			//else
-				cout << dis[i][j] << " ";
+			cout << dis[i][j] << " ";
 		}
 		cout << "\n";
 	}

@@ -109,7 +109,9 @@ int test1(p I, int pos, int h = 0) {
 	int &val = dp[now.x][now.y][pos];
 	if(val != -1)
 		return val;
-	val = max(test1(now, moves[pos][0], h+1), test1(now, moves[pos][1], h+1));
+	int pv = test1(now, moves[pos][0], h+1);
+	int nv = test1(now, moves[pos][1], h+1);
+	val = max(pv, nv);
 	return val;
 }
 
