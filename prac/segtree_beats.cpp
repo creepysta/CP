@@ -22,6 +22,18 @@ tmpt , class V> ostop , const pair<T,V> &p) { o << "(";o << p.first << ", " << p
 
 const int INF = int(1e9) + 5;
 
+/*
+https://codeforces.com/blog/entry/58564
+https://codeforces.com/blog/entry/57319
+    1. update
+        A[i] = max(A[i], x)   ,  L <= i <= R
+    2. query #1
+        min(A[L], A[L + 1], ..., A[R])
+    3. query #2
+        sum(A[L], A[L + 1], ..., A[R])
+*/
+
+// tree of second max
 struct SegBeats {
 	struct Node {
 		int maxVal, maxVal2, cntMax, sum, minVal;

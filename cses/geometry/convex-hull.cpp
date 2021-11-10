@@ -10,7 +10,7 @@ struct P {
 		cin >> x >> y;
 	}
 	P operator -(const P &p) const {
-		return P{p.x - x, p.y - y};
+		return P{x - p.x, y - p.y};
 	}
 	int operator *(const P &p) const {
 		return x * p.y - y * p.x;

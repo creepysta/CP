@@ -25,36 +25,39 @@ tmpt > ostop , const multiset<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) {o<<"(";o<<p.first<<", "<<p.second<<")";return o;}
 
-vector<vector<int>> dp;
 
-/*
-state : max_pages(take book, ignore book)
-
-*/
 void solve() {
     int n, x;
     cin >> n >> x;
-    vector<int> price(n), pages(n);
+    vector<int> price(n+1), pages(n+1);
     for(int i = 0; i < n; i++)
-        cin >> price[i];
+        cin >> price[i+1];
     for(int i = 0; i < n; i++)
-        cin >> pages[i];
-    dp = vector<vector<int>>(n+1, vector<int> (x+1, -INF));
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < n; j++) {
-
+        cin >> pages[i+1];
+    int dp[n+1][x+1];
+    for(int i = 0; i <= n; i++) {
+        for(int amt = 0; amt <= x; amt++) {
+            if(!amt || !i)
+                dp[i][amt] = 0;
+            else {
+                int op1 = dp[i-1][amt];
+                int op2 = 0;
+                if(amt >=  price[i])
+                    op2 = pages[i] + dp[i-1][amt - price[i]];
+                dp[i][amt] = max(op1, op2);
+            }
         }
     }
+    int ans = dp[n][x];
+    cout << ans << '\n';
 }
 
 int32_t main() {
     FIO;
     int t = 1;
-    cin >> t;
     for(int tt = 1; tt <= t; tt++) {
         // cout << "Case #" << tt << ": ";
         solve();
     }
     return 0;
 }
-

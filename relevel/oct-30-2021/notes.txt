@@ -1,0 +1,14 @@
+1. given n, k
+    1 <= n <= 10 ** 100000
+    1 <= k <= 1e9
+    remove a single digit from n and find max n % k
+
+2. given n, k
+    find distinct pairs (X,Y) [remove X digits from front, Y digits from end |
+    given the remaining number has atleast 1 digit] such that n % k == 0
+
+3. given a where 1 <= ai <= 9
+    ans for q queries, 1 <= q <= 2*10**4
+    given x, find smallest number >= k whose digits are in a
+    1 <= x <= 2*10**4
+

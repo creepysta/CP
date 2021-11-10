@@ -1,3 +1,5 @@
+he:
+    https://www.hackerearth.com/challenges/competitive/hackerearth-deep-learning-challenge-friendship-day/problems/
 hacker rank:
 	larrys array
 	posion plant
@@ -33,3 +35,5 @@ codechef:
 	parrty
 	https://www.codechef.com/OCT18B
 	https://www.codechef.com/JULY19B
+
+

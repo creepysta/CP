@@ -49,8 +49,7 @@ struct Seg {
 		lazy[v] = 0;
 	}
 	void update(int x, int lx, int rx, int l, int r, int X) {
-		if(l > r) return;
-		if(rx < l || lx > r) return;
+		if(l > r || rx < l || lx > r) return;
 		if(l <= lx && rx <= r) {
 			t[x] += X;
 			lazy[x] += X;
@@ -66,7 +65,7 @@ struct Seg {
 		update(1, 0, n-1, l, r, X);
 	}
 	int query(int x, int lx, int rx, int l, int r) {
-		if(l > r) return -INF;
+		if(l > r || rx < l || lx > r) return -INF;
 		if(l <= lx && rx <= r) return t[x];
 		push(x);
 		int mid = (lx + rx) / 2;

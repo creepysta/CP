@@ -4,7 +4,7 @@ const int MOD = int(1e9) + 7;
 #ifdef LOCAL
 #define debug(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); cerr << "debug: [ "; err(_it, args); }
 #else
-#define debug(args...) 0;
+#define debug(args...) ;
 #endif
 #define tmpt template < class T
 #define ostop ostream& operator<<(ostream& o
@@ -45,8 +45,7 @@ struct Seg {
 		update(1, 0, n-1, l, r, X);
 	}
 	int query(int x, int lx, int rx, int l, int r, int X) {
-		if(l > r) return INF;
-		if(lx > r || rx < l) return INF;
+		if(l > r || lx > r || rx < l) return INF;
 		if(l <= lx && rx <= r) {
 			auto pos = lower_bound(t[x].begin(), t[x].end(), X);
 			if(pos != t[x].end())
