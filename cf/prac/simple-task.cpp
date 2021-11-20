@@ -51,17 +51,6 @@ int recur(int mask, int u, int i) {
     return val;
 }
 
-int iter() {
-    fill(dp.begin(), dp.end(), vector<int> (1 << 19, -1));
-    for(int start = 0; start < n; start++) {
-        for(int mask = 0; mask < (1<<n - start - 1); mask++) {
-            for (int j = 0; j < n; j++) {
-
-            }
-        }
-
-    }
-}
 
 void solve() {
     cin >> n >> m;

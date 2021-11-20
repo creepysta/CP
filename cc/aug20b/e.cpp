@@ -9,8 +9,8 @@ void solve() {
 	cin >> n >> k;
 	const int inf = 1e9 + 5;
 	const int nax = 1e5 + 5;
-	vector<int> a(n), cnt(nax, 0), dp(nax, inf);
-	for(int &i : a) 
+	vector<int> a(n), cnt(100+5, 0), dp(1000+5, inf);
+	for(int &i : a)
 		cin >> i;
 	dp[0] = 0;
 	for(int i = 0; i < n; i++) {
