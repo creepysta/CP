@@ -29,10 +29,10 @@ vector<vector<int>> g, gr;
 vector<bool> vis, wts;
 
 vector<int> calc(int src, int dest) {
-    //queue<int> q;
-    //q.push(src);
-    //vector<int> parent(1e6 + 5);
-    //parent[src] = -1;
+    queue<int> q;
+    q.push(src);
+    vector<int> parent(1e6 + 5);
+    parent[src] = -1;
     auto req = gr[dest];
     debug(req);
     auto check = [&](int s, int t) {
