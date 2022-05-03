@@ -1,6 +1,5 @@
 /*
-	author: Creepysta
-
+    author: Creepysta
 */
 #include <bits/stdc++.h>
 #include<ext/pb_ds/assoc_container.hpp>
@@ -34,13 +33,13 @@ void solve() {
 }
 
 int32_t main() {
-	ios_base::sync_with_stdio(0);
-	cin.tie(0); cout.tie(0);
-	int t = 1;
-	cin >> t;
-	for(int tt = 1; tt <= t; tt++) {
-		// cout << "Case #" << tt << ": ";
-		solve();
-	}
-	return 0;
+    FIO;
+    int t = 1;
+    cin >> t;
+    for(int tt = 1; tt <= t; tt++) {
+        // cout << "Case #" << tt << ": ";
+        solve();
+    }
+    return 0;
 }
+
