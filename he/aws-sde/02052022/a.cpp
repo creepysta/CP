@@ -1,6 +1,6 @@
 /*
-	author: Creepysta
-   02-05-2022 19:31:06
+    author: Creepysta
+    02-05-2022 19:31:06
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -63,12 +63,12 @@ void solve() {
 
 int32_t main() {
     FIO;
-	int t = 1;
-	cin >> t;
-	for(int tt = 1; tt <= t; tt++) {
-		// cout << "Case #" << tt << ": ";
-		solve();
-	}
-	return 0;
+    int t = 1;
+    cin >> t;
+    for(int tt = 1; tt <= t; tt++) {
+        // cout << "Case #" << tt << ": ";
+        solve();
+    }
+    return 0;
 }
 

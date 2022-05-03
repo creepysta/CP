@@ -1,11 +1,16 @@
 // minimize the difference between max and min XOR if 2 edges are cut to make 3
 // forests
 /*
-	author: Creepysta
-   02-05-2022 20:03:36
+    author: Creepysta
+    03-05-2022 12:28:12
 */
 #include <bits/stdc++.h>
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
 using namespace std;
+template <typename T>
+using tree_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 #define int int64_t
 const int INF = int(1e12) + 7;
 const int MOD = int(1e9) + 7;
@@ -42,39 +47,39 @@ void dfs(int u, int p=-1) {
 
 
 struct st {
-	int size;
-	vector<int> vec;
-	void init(int n) {
-		size = 1;
-		while(size < n) size <<= 1;
-		vec.assign(2*size-1, 0);
-	}
-	void build(const vector<int> &a, int x, int lx, int rx) {
-		if(rx - lx == 1) {
-			if(lx < (int) a.size()) {
-				vec[x] = a[lx];
-			}
-			return;
-		}
-		int mid = lx + (rx - lx) /2;
-		build(a, 2*x+1, lx, mid);
-		build(a, 2*x+2, mid, rx);
-		vec[x] = vec[2*x+1] + vec[2*x + 2];
-	}
-	void build(const vector<int> &a) {
-		build(a, 0, 0, size);
-	}
-	int query(int l, int r, int x, int lx, int rx) {
-		if(lx >= r || l >= rx) return 0;
-		if(lx >= l && rx <= r) return vec[x];
-		int mid = lx + (rx - lx) / 2;
-		int ql = query(l, r, 2*x+1, lx, mid);
-		int qr = query(l, r, 2*x+2, mid, rx);
-		return ql + qr;
-	}
-	int query(int l, int r) {
-		return query(l, r, 0, 0, size);
-	}
+    int size;
+    vector<int> vec;
+    void init(int n) {
+        size = 1;
+        while(size < n) size <<= 1;
+        vec.assign(2*size-1, 0);
+    }
+    void build(const vector<int> &a, int x, int lx, int rx) {
+        if(rx - lx == 1) {
+            if(lx < (int) a.size()) {
+                vec[x] = a[lx];
+            }
+            return;
+        }
+        int mid = lx + (rx - lx) /2;
+        build(a, 2*x+1, lx, mid);
+        build(a, 2*x+2, mid, rx);
+        vec[x] = vec[2*x+1] + vec[2*x + 2];
+    }
+    void build(const vector<int> &a) {
+        build(a, 0, 0, size);
+    }
+    int query(int l, int r, int x, int lx, int rx) {
+        if(lx >= r || l >= rx) return 0;
+        if(lx >= l && rx <= r) return vec[x];
+        int mid = lx + (rx - lx) / 2;
+        int ql = query(l, r, 2*x+1, lx, mid);
+        int qr = query(l, r, 2*x+2, mid, rx);
+        return ql + qr;
+    }
+    int query(int l, int r) {
+        return query(l, r, 0, 0, size);
+    }
 };
 
 void solve() {
@@ -99,7 +104,7 @@ void solve() {
     s.build(ts);
     int ans = INF;
     for(int i = 0; i < tn; i++) {
-        for(int j = i + 1; j < tn; j++) {
+        for(int j = i + 1; j < tn-1; j++) {
             vector<int> check(3);
             check[0] = s.query(0, i+1);
             check[1] = s.query(i+1, j+1);
@@ -117,12 +122,12 @@ void solve() {
 
 int32_t main() {
     FIO;
-	int t = 1;
-	cin >> t;
-	for(int tt = 1; tt <= t; tt++) {
-		// cout << "Case #" << tt << ": ";
-		solve();
-	}
-	return 0;
+    int t = 1;
+    cin >> t;
+    for(int tt = 1; tt <= t; tt++) {
+        // cout << "Case #" << tt << ": ";
+        solve();
+    }
+    return 0;
 }
 
