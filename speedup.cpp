@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+
+
 const int MOD = 1e9 + 7;
 
 double babylonRoot(int num) {
@@ -36,19 +39,19 @@ double modpow(double a, int n) {
     return res;
 }
 
-double nthRoot(int a, int n) {
-    double l = 0, h = a;
+double nthRoot(int x, int n) {
+    double l = 0, h = x;
     double eps = 1e-3;
     double mid = 0.0;
     while(1) {
         mid = l + (h-l)/2;
         double p = modpow(mid, n);
-        double got = abs(p - a);
+        double got = std::abs(p - x);
         if(got < eps) break;
         if(p > x)
-            h = m;
+            h = mid;
         else
-            l = m;
+            l = mid;
     }
     return mid;
 }
@@ -67,7 +70,7 @@ int modpow(int a, int b, int mod) {
 int gcd(int a, int b) {
     while(b) {
         a %= b;
-        swap(a, b);
+        std::swap(a, b);
     }
     return a;
 }
@@ -91,9 +94,9 @@ int extgcd(int a, int b, int &x, int &y) {
     int x1 = 1, y1 = 0, a1 = a, b1 = b;
     while(b1) {
         int q = a1 / b1;
-        tie(x, x1) = make_tuple(x1, x - q * x1);
-        tie(y, y1) = make_tuple(y1, y - q * y1);
-        tie(a1, b1) = make_tuple(b1, a1 - q * b1);
+        std::tie(x, x1) = std::make_tuple(x1, x - q * x1);
+        std::tie(y, y1) = std::make_tuple(y1, y - q * y1);
+        std::tie(a1, b1) = std::make_tuple(b1, a1 - q * b1);
     }
     return a1;
 }
