@@ -83,7 +83,7 @@ int fgcd(int a, int b) {
     do {
         b >>= __builtin_ctzll(b);
         if(a > b)
-            swap(a, b);
+            std::swap(a, b);
         b -= a;
     } while (b);
     return  a << shift;
