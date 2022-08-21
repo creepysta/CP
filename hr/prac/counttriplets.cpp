@@ -61,8 +61,8 @@ long countTriplets(const vector<long> &a, long r) {
     //     for(int j = i+1; j < n-1; j++) {
     //         if(a[i] * r == a[j]) {
     //             long x = a[j] * r;
-    //             int l = lb(j+1, x);
-    //             int r = ub(j+1, x);
+    //             int l = lb(j+1, n, x);
+    //             int r = ub(j+1, n, x);
     //             cerr << i << " " << j << " " << x << " " << l << " " << r << endl;
     //             if(l == -1) continue;
     //             ans += r == -1 ? 1 : r-l+1;
