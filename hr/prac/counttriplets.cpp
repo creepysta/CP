@@ -103,3 +103,39 @@ int main() {
     cout << ans << '\n';
     return 0;
 }
+
+
+/*
+
+
+_ _ _ _ _           sum(n-2)
+i
+  j
+    k k k
+
+_ _ _ _ _
+i
+    j
+      k k
+
+_ _ _ _ _
+i
+      j
+        k
+
+_ _ _ _ _       sum(n-3)
+  i
+    j
+      k k
+
+_ _ _ _ _
+  i
+      j
+        k
+
+_ _ _ _ _       sum(n-4)
+    i
+      j
+        k
+
+*/
