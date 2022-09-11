@@ -1,7 +1,6 @@
 /*
     author: Creepysta
-    03-09-2022 17:13:59
-https://www.geeksforgeeks.org/allocate-minimum-number-pages/
+    04-09-2022 12:55:56
 */
 #include <bits/stdc++.h>
 #include<ext/pb_ds/assoc_container.hpp>
@@ -31,47 +30,25 @@ tmpt > ostop , const multiset<T> &x) itfr
 tmpt , class V> ostop , const map<T,V> &x) itfr
 tmpt , class V> ostop , const pair<T,V> &p) {o<<"(";o<<p.first<<", "<<p.second<<")";return o;}
 
-/*
-[ a: [12, 34, 67, 90] ]
-[ p: [0, 12, 46, 113, 203] ]
-*/
-
-void solve(const vector<int> &a, int m) {
+void solve(vector<int> &a) {
     int n = a.size();
-    vector<int> pref(n+1);
-    pref[1] = a[0];
-    for(int i = 1; i < n; i++) {
-        pref[i+1] = a[i] + pref[i];
-    }
-    debug(a);
-    debug(pref);
-    int expected = pref.back() / m;
-    int lo = 0, hi = n;
-    int ans = pref.back() + 5;
-    while(lo <= hi) {
-        int mid = lo + (hi-lo)/2;
-        if(expected == pref[mid]) {
-            ans = pref[mid];
-        } else if(expected > pref[mid]) {
-            lo = mid + 1;
-        } else {
-            hi = mid - 1;
+    for(int i = 0; i < n; i++)
+        a[i] %= 60;
+    set<int> s;
+    int cnt = 0;
+    for(int i = 0; i < n; i++) {
+        if(s.find(60-a[i]) != s.end()) {
+            cnt ++;
         }
+        s.insert(a[i]);
     }
-    if (ans == pref.back() + 5) {
-        int ld = abs(expected - pref[lo]);
-        int rd = abs(expected - pref[hi]);
-        ans = ld < rd ? pref[lo] : pref[hi];
-    }
-    debug(expected, lo, hi);
-    debug(ans);
-    cout << ans << '\n';
+    cout << cnt << '\n';
 }
 
 int32_t main() {
-    vector<int> a{12, 34, 67, 90};
-    int n = a.size(), m = 2;
-    solve(a, m);
+    FIO;
+    vector<int> a {40, 20, 60};
+    solve(a);
     return 0;
 }
 
